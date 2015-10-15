@@ -1,11 +1,10 @@
-﻿using System;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Reflection;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    using System;
+    using System.Data.Entity;
+    using System.Linq;
+    using System.Reflection;
+
     /// <summary>
     /// Represents a Business Rules Controller
     /// </summary>
@@ -47,10 +46,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         public void RunBusinessRules()
         {
-            var methodInfoSet = GetType().GetMethods().Where(m => m.ReturnType == typeof(void) && m.IsPublic
+            var methodInfoSet = GetType().GetMethods().Where(m => m.ReturnType == typeof (void) && m.IsPublic
                                                                   && !m.IsConstructor &&
-                                                                  m.GetCustomAttributes(typeof(BusinessRuleAttribute),
-                                                                                        true).Any()).ToArray();
+                                                                  m.GetCustomAttributes(typeof (BusinessRuleAttribute),
+                                                                      true).Any()).ToArray();
 
             ExecuteBusinessRulesMethods(EntityState.Added, ActionFlags.Create, methodInfoSet);
             ExecuteBusinessRulesMethods(EntityState.Modified, ActionFlags.Update, methodInfoSet);
@@ -90,17 +89,17 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
                 if (entityType.BaseType != null && entityType.Namespace == "System.Data.Entity.DynamicProxies")
                     entityType = entityType.BaseType;
 
-                var methods = methodInfoSet.Where(m => m.GetCustomAttributes(typeof(BusinessRuleAttribute), true)
-                                                        .Select(a => a as BusinessRuleAttribute)
-                                                        .Any(
-                                                            b =>
-                                                            b.EntityTypes.Any(
-                                                                t => t == entityType) &&
-                                                            (b.Action & action) == action));
+                var methods = methodInfoSet.Where(m => m.GetCustomAttributes(typeof (BusinessRuleAttribute), true)
+                    .Select(a => a as BusinessRuleAttribute)
+                    .Any(
+                        b => (b.EntityTypes == null ||
+                              b.EntityTypes.Any(
+                                  t => t == entityType)) &&
+                             (b.Action & action) == action));
 
                 foreach (var methodInfo in methods)
                 {
-                    methodInfo.Invoke(this, new[] { entity });
+                    methodInfo.Invoke(this, new[] {entity});
                 }
             }
         }

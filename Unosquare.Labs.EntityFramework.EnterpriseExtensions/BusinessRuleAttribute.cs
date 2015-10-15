@@ -52,6 +52,15 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <summary>
         /// Specifies the types and actions that a method handles as a business rule
         /// </summary>
+        /// <param name="actionFlags">The action flags the method can handle.</param>
+        public BusinessRuleAttribute(ActionFlags actionFlags)
+        {
+            this.Action = actionFlags;
+        }
+
+        /// <summary>
+        /// Specifies the types and actions that a method handles as a business rule
+        /// </summary>
         /// <param name="entityTypes">The entity types the method can handle.</param>
         /// <param name="actionFlags">The action flags the method can handle.</param>
         public BusinessRuleAttribute(Type[] entityTypes, ActionFlags actionFlags)

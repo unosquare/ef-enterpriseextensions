@@ -14,7 +14,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 
         protected BusinessDbContext() : base()
         {
-            
+
         }
 
         protected BusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)
