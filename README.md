@@ -1,0 +1,2 @@
+# ef-enterpriseextensions
+EntityFramework.EnterpriseExtensions Library
