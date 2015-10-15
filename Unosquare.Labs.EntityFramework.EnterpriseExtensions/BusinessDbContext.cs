@@ -9,14 +9,22 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// </summary>
     public abstract class BusinessDbContext : DbContext
     {
-        protected List<IBusinessRulesController> BusinessControllers = new List<IBusinessRulesController>();
+        private List<IBusinessRulesController> BusinessControllers = new List<IBusinessRulesController>();
         private DbConnection dbConnection;
 
+        /// <summary>
+        /// Instances a new DbContext
+        /// </summary>
         protected BusinessDbContext() : base()
         {
 
         }
 
+        /// <summary>
+        /// Instances a new DbContext with a DbConnection
+        /// </summary>
+        /// <param name="dbConnection"></param>
+        /// <param name="contextOwnsConnection"></param>
         protected BusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)
             : base(dbConnection, contextOwnsConnection)
         {

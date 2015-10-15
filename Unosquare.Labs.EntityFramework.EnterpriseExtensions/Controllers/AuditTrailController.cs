@@ -9,6 +9,11 @@ using Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
 {
+    /// <summary>
+    /// Represents an AuditTrail controller
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TEntity"></typeparam>
     public class AuditTrailController<T, TEntity> : BusinessRulesController<T>
         where T : DbContext
     {
@@ -17,6 +22,11 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
         private readonly List<Type> _validDeleteTypes = new List<Type>();
         private readonly string _currentUserId;
 
+        /// <summary>
+        /// Instances a new controller
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="currentUserId"></param>
         public AuditTrailController(T context, string currentUserId) : base(context)
         {
             _currentUserId = currentUserId;
@@ -55,6 +65,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             }
         }
 
+        /// <summary>
+        /// Method to catch new entities
+        /// </summary>
+        /// <param name="entity"></param>
         [BusinessRule(ActionFlags.Create)]
         public virtual void OnEntityCreated(object entity)
         {
@@ -65,6 +79,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             AuditEntry(ActionFlags.Create, entity, entityType.Name);
         }
 
+        /// <summary>
+        /// Method to catch modified entities
+        /// </summary>
+        /// <param name="entity"></param>
         [BusinessRule(ActionFlags.Update)]
         public virtual void OnEntityUpdated(object entity)
         {
@@ -75,6 +93,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             AuditEntry(ActionFlags.Update, entity, entityType.Name);
         }
 
+        /// <summary>
+        /// Method to catch deleted entities
+        /// </summary>
+        /// <param name="entity"></param>
         [BusinessRule(ActionFlags.Delete)]
         public virtual void OnEntityDeleted(object entity)
         {

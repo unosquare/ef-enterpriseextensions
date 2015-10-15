@@ -1,15 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    /// <summary>
+    /// Common types and constants
+    /// </summary>
     public static class Common
     {
+        /// <summary>
+        /// Dynamic Proxies namespace
+        /// </summary>
         public static string DynamicProxiesNamespace = "System.Data.Entity.DynamicProxies";
 
+        /// <summary>
+        /// Primitive Types
+        /// </summary>
         public static Type[] PrimitiveTypes =
         {
             typeof (string),
