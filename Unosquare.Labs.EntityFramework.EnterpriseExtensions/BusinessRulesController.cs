@@ -32,6 +32,13 @@
         /// </summary>
         /// <param name="controller"></param>
         void RemoveController(IBusinessRulesController controller);
+
+        /// <summary>
+        /// Checks if a BusinessController exists
+        /// </summary>
+        /// <param name="controller"></param>
+        /// <returns></returns>
+        bool ContainsController(IBusinessRulesController controller);
     }
 
     /// <summary>

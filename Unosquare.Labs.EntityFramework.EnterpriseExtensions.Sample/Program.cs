@@ -21,15 +21,91 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
             using (var context = new SampleDb(connection, "geo"))
             {
+                console.WriteLine("Welcome to EF Test Console, type help to check available commands", OutputLevel.Information, null);
+
+                context.Products.AddRange(new[]
+                {
+                    new Product {Name = "CocaCola"},
+                    new Product {Name = "Pepsi"},
+                    new Product {Name = "Starbucks"},
+                    new Product {Name = "Donut"}
+                });
+
+                context.SaveChanges();
+
                 var command = new RootCommand(console);
 
                 command.RegisterCommand(new FillOrderCommand(context));
                 command.RegisterCommand(new EditOrder(context));
                 command.RegisterCommand(new QueryAuditTrail(context));
+                command.RegisterCommand(new QueryOrder(context));
+                command.RegisterCommand(new ToggleController(context));
 
                 var commandEngine = new CommandEngine(command);
 
                 commandEngine.Run(args);
+            }
+        }
+
+        internal class ToggleController : ActionCommandBase
+        {
+            private SampleDb _context;
+            private static TestController controller;
+
+            public ToggleController(SampleDb context)
+                : base("toggle", "Toggle test controller")
+            {
+                _context = context;
+
+                if (controller == null)
+                    controller = new TestController(_context);
+            }
+
+            public override async Task<bool> InvokeAsync(string paramList)
+            {
+                OutputInformation("Toggling controller");
+                OutputInformation("Test controller will change orders city to 'NYC'");
+
+                if (_context.ContainsController(controller))
+                {
+                    OutputInformation("Controller is off");
+                    _context.RemoveController(controller);
+                }
+                else
+                {
+                    OutputInformation("Controller is on");
+                    _context.AddController(controller);
+                }
+
+                return true;
+            }
+        }
+
+        internal class QueryOrder : ActionCommandBase
+        {
+            private SampleDb _context;
+
+            public QueryOrder(SampleDb context)
+                : base("order", "Check last Order")
+            {
+                _context = context;
+            }
+
+            public override async Task<bool> InvokeAsync(string paramList)
+            {
+                OutputInformation("Last Order");
+
+                var lastitem = _context.Orders.OrderByDescending(x => x.OrderID).FirstOrDefault();
+
+                if (lastitem != null)
+                {
+                    OutputInformation("OrderID {0}", lastitem.OrderID);
+                    OutputInformation("OrderType {0}", lastitem.OrderType);
+                    OutputInformation("ShippedDate {0}", lastitem.ShippedDate);
+                    OutputInformation("ShipperCity {0}", lastitem.ShipperCity);
+                }
+
+                return true;
             }
         }
 
@@ -111,16 +187,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                     "Simian"
                 };
 
-                _context.Products.AddRange(new[]
-                {
-                    new Product {Name = "CocaCola"},
-                    new Product {Name = "Pepsi"},
-                    new Product {Name = "Starbucks"},
-                    new Product {Name = "Donut"}
-                });
-
-                _context.SaveChanges();
-
                 var rand = new Random();
                 var products = _context.Products.ToArray();
 
@@ -130,27 +196,38 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                     IsShipped = rand.Next(10) > 5,
                     ShipperCity = shipperCities[rand.Next(shipperCities.Length - 1)],
                     ShippedDate = DateTime.Now.AddDays(1 - rand.Next(10)),
-                    OrderType = rand.Next(30)
+                    OrderType = rand.Next(30),
+                    Amount = 10
                 };
 
-                for (var k = 0; k < rand.Next(10); k++)
-                {
-                    order.Details.Add(new OrderDetail
-                    {
-                        Price = rand.Next(10),
-                        Description = "Product ID" + rand.Next(1000),
-                        Quantity = rand.Next(10),
-                        ProductID = products[rand.Next(products.Length - 1)].ProductID
-                    });
-                }
+                //for (var k = 0; k < rand.Next(10); k++)
+                //{
+                //    order.Details.Add(new OrderDetail
+                //    {
+                //        Price = rand.Next(10),
+                //        Description = "Product ID" + rand.Next(1000),
+                //        Quantity = rand.Next(10),
+                //        ProductID = products[rand.Next(products.Length - 1)].ProductID
+                //    });
+                //}
 
-                order.Amount = order.Details.Sum(x => x.Price*x.Quantity);
+                // order.Amount = order.Details.Sum(x => x.Price*x.Quantity);
+
+                OutputInformation("OrderID {0}", order.OrderID);
+                OutputInformation("OrderType {0}", order.OrderType);
+                OutputInformation("ShippedDate {0}", order.ShippedDate);
+                OutputInformation("ShipperCity {0}", order.ShipperCity);
 
                 _context.Orders.Add(order);
 
                 _context.SaveChanges();
 
-                OutputInformation("Now we have {0}", _context.Orders.Count());
+                OutputInformation("After save");
+
+                OutputInformation("OrderID {0}", order.OrderID);
+                OutputInformation("OrderType {0}", order.OrderType);
+                OutputInformation("ShippedDate {0}", order.ShippedDate);
+                OutputInformation("ShipperCity {0}", order.ShipperCity);
 
                 return true;
             }

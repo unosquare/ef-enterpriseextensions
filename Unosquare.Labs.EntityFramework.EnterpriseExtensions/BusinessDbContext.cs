@@ -48,6 +48,16 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         }
 
         /// <summary>
+        /// Checks if a BusinessController exists
+        /// </summary>
+        /// <param name="controller"></param>
+        /// <returns></returns>
+        public bool ContainsController(IBusinessRulesController controller)
+        {
+            return _businessControllers.Contains(controller);
+        }
+
+        /// <summary>
         /// Save Changes and run all the business controllers
         /// </summary>
         /// <returns></returns>
