@@ -143,4 +143,24 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             return result;
         }
     }
+
+    /// <summary>
+    /// Extension methods
+    /// </summary>
+    public static class FluentAuditTrailExtension
+    {
+        /// <summary>
+        /// Extension method to add AuditTrail to a DbContext
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="currentUserId"></param>
+        /// <returns></returns>
+        public static IBusinessDbContext UseAuditTrail<T, TEntity>(this IBusinessDbContext context, string currentUserId)
+            where T : DbContext
+        {
+            context.AddController(new AuditTrailController<T, TEntity>((T) context, currentUserId));
+
+            return context;
+        }
+    }
 }

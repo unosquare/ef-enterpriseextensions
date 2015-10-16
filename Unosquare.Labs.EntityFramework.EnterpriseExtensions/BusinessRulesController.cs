@@ -17,6 +17,24 @@
     }
 
     /// <summary>
+    /// Creates a new DbContext with support to run BusinessControllers
+    /// </summary>
+    public interface IBusinessDbContext
+    {
+        /// <summary>
+        /// Adds a new BusinessController to the DbContext
+        /// </summary>
+        /// <param name="controller"></param>
+        void AddController(IBusinessRulesController controller);
+
+        /// <summary>
+        /// Removes a new BusinessController to the DbContext
+        /// </summary>
+        /// <param name="controller"></param>
+        void RemoveController(IBusinessRulesController controller);
+    }
+
+    /// <summary>
     /// Provides a base implementation of a business rules controller class
     /// Decorate methods in a derived class with the BusinessRuleAttribute to execute business rules for the given entity types
     /// </summary>

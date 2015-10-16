@@ -7,7 +7,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <summary>
     /// Creates a new IdentityDbContext with support to run BusinessControllers
     /// </summary>
-    public abstract class IdentityBusinessDbContext<TUser> : IdentityDbContext<TUser> where TUser : IdentityUser
+    public abstract class IdentityBusinessDbContext<TUser> : IdentityDbContext<TUser>, IBusinessDbContext
+        where TUser : IdentityUser
     {
         private readonly List<IBusinessRulesController> _businessControllers = new List<IBusinessRulesController>();
 

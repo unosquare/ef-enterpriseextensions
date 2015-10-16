@@ -7,7 +7,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <summary>
     /// Creates a new DbContext with support to run BusinessControllers
     /// </summary>
-    public abstract class BusinessDbContext : DbContext
+    public abstract class BusinessDbContext : DbContext, IBusinessDbContext
     {
         private readonly List<IBusinessRulesController> _businessControllers = new List<IBusinessRulesController>();
 
