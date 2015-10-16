@@ -8,7 +8,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Config", "Config", "{66A1228A-C42B-4A0D-81D2-9F506E98E630}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
+		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions", "Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions\Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions.csproj", "{D2C1B6DF-6189-4989-A835-64EA6B64D27F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +23,10 @@ Global
 		{F8A52F6C-8DEB-4CDE-BAF2-E49A3B9AE7CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8A52F6C-8DEB-4CDE-BAF2-E49A3B9AE7CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8A52F6C-8DEB-4CDE-BAF2-E49A3B9AE7CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C1B6DF-6189-4989-A835-64EA6B64D27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C1B6DF-6189-4989-A835-64EA6B64D27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C1B6DF-6189-4989-A835-64EA6B64D27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C1B6DF-6189-4989-A835-64EA6B64D27F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

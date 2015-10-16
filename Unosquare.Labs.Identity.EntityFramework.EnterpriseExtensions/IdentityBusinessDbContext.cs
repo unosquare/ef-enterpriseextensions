@@ -1,22 +1,21 @@
 ﻿using System.Collections.Generic;
 using System.Data.Common;
-using System.Data.Entity;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
     /// <summary>
-    /// Creates a new DbContext with support to run BusinessControllers
+    /// Creates a new IdentityDbContext with support to run BusinessControllers
     /// </summary>
-    public abstract class BusinessDbContext : DbContext
+    public abstract class IdentityBusinessDbContext<TUser> : IdentityDbContext<TUser> where TUser : IdentityUser
     {
         private readonly List<IBusinessRulesController> _businessControllers = new List<IBusinessRulesController>();
 
         /// <summary>
         /// Instances a new DbContext
         /// </summary>
-        protected BusinessDbContext() : base()
+        protected IdentityBusinessDbContext() : base()
         {
-
         }
 
         /// <summary>
@@ -24,7 +23,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="dbConnection"></param>
         /// <param name="contextOwnsConnection"></param>
-        protected BusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)
+        protected IdentityBusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)
             : base(dbConnection, contextOwnsConnection)
         {
         }
@@ -58,5 +57,12 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 
             return base.SaveChanges();
         }
+    }
+
+    /// <summary>
+    /// Creates a new IdentityDbContext with support to run BusinessControllers
+    /// </summary>
+    public abstract class IdentityBusinessDbContext : IdentityBusinessDbContext<IdentityUser>
+    {
     }
 }
