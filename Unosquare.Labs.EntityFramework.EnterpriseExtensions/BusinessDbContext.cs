@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Data.Common;
 using System.Data.Entity;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
@@ -17,6 +19,13 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         protected BusinessDbContext() : base()
         {
 
+        }
+
+        /// <summary>
+        /// Instances a new DbContext with a connection name
+        /// </summary>
+        protected BusinessDbContext(string connectionName) : base(connectionName)
+        {
         }
 
         /// <summary>
@@ -57,16 +66,42 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
             return _businessControllers.Contains(controller);
         }
 
+        private void RunBusinessRules()
+        {
+            foreach (var controller in _businessControllers)
+            {
+                controller.RunBusinessRules();
+            }
+        }
+
         /// <summary>
         /// Save Changes and run all the business controllers
         /// </summary>
         /// <returns></returns>
         public override int SaveChanges()
         {
-            foreach (var controller in _businessControllers)
-                controller.RunBusinessRules();
-
+            RunBusinessRules();
             return base.SaveChanges();
+        }
+
+        /// <summary>
+        /// Save Changes Async and run all the business controllers
+        /// </summary>
+        /// <returns></returns>
+        public override Task<int> SaveChangesAsync()
+        {
+            RunBusinessRules();
+            return base.SaveChangesAsync();
+        }
+
+        /// <summary>
+        /// Save Changes Async and run all the business controllers
+        /// </summary>
+        /// <returns></returns>
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken)
+        {
+            RunBusinessRules();
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }
