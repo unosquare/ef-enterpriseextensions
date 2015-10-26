@@ -71,6 +71,8 @@
     <Compile Include="Database\SampleDb.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleJob.cs" />
+    <Compile Include="SimpleConsoleLog.cs" />
     <Compile Include="TestController.cs" />
   </ItemGroup>
   <ItemGroup>

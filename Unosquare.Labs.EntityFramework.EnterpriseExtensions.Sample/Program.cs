@@ -21,7 +21,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
             using (var context = new SampleDb(connection, "geo"))
             {
-                console.WriteLine("Welcome to EF Test Console, type help to check available commands", OutputLevel.Information, null);
+                console.WriteLine("Welcome to EF Test Console, type help to check available commands",
+                    OutputLevel.Information, null);
 
                 context.Products.AddRange(new[]
                 {
@@ -33,6 +34,9 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
                 context.SaveChanges();
 
+                var ct = new System.Threading.CancellationToken();
+                Task.Run(() => { SampleJob.Instance.RunBackgroundWork(ct); }, ct);
+
                 var command = new RootCommand(console);
 
                 command.RegisterCommand(new FillOrderCommand(context));
@@ -40,10 +44,26 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 command.RegisterCommand(new QueryAuditTrail(context));
                 command.RegisterCommand(new QueryOrder(context));
                 command.RegisterCommand(new ToggleController(context));
+                command.RegisterCommand(new JobController());
 
                 var commandEngine = new CommandEngine(command);
 
                 commandEngine.Run(args);
+            }
+        }
+
+        internal class JobController : ActionCommandBase
+        {
+            public JobController()
+                : base("job", "Check Job")
+            {
+            }
+
+            public override async Task<bool> InvokeAsync(string paramList)
+            {
+                OutputInformation("Job Status: {0}", SampleJob.Instance.IsRunning);
+
+                return true;
             }
         }
 

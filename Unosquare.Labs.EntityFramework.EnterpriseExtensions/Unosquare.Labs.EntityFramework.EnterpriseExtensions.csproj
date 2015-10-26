@@ -60,6 +60,9 @@
     <Compile Include="BusinessRulesController.cs" />
     <Compile Include="Common.cs" />
     <Compile Include="Controllers\AuditTrailController.cs" />
+    <Compile Include="JobBase.cs" />
+    <Compile Include="Log\IEmailHelper.cs" />
+    <Compile Include="Log\ILog.cs" />
     <Compile Include="ObjectModel\IAuditTrailEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
