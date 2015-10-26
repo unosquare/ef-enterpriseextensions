@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 {
-    public class SampleJob : JobBase<SampleJob>
+    public class SampleJob : JobBase<SampleJob, SampleDb>
     {
         public SampleJob() : base(null, new SimpleConsoleLog())
         {

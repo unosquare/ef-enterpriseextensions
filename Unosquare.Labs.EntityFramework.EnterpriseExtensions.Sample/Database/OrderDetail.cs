@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
 {
-    class OrderDetail
+    public class OrderDetail
     {
         [Key]
         public int OrderDetailID { get; set; }

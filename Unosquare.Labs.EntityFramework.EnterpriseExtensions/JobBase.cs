@@ -8,9 +8,11 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <summary>
     /// Creates a job with multiple running options
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public abstract class JobBase<T> : IDisposable
-        where T : class
+    /// <typeparam name="T">The Job type</typeparam>
+    /// <typeparam name="TDbContext">The DbContext type, it must inherent IBusinessDbContext</typeparam>
+    /// <typeparam name="TParam">The job input parameter type</typeparam>
+    public abstract class JobBase<T, TDbContext, TParam> : IDisposable
+        where T : class where TDbContext : IBusinessDbContext where TParam : class
     {
         /// <summary>
         /// The static, singleton instance reference.
@@ -20,11 +22,13 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <summary>
         /// The BusinessDbContext instance
         /// </summary>
-        protected readonly IBusinessDbContext Context;
+        protected readonly TDbContext Context;
+
         /// <summary>
         /// The logger instance
         /// </summary>
         protected readonly ILog Log;
+
         /// <summary>
         /// The email helper instance
         /// </summary>
@@ -35,7 +39,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         protected JobBase()
         {
-            throw new InvalidOperationException("You need to call constructor with params in your implementation");
+            throw new InvalidOperationException("You need to call constructor with parameters in your implementation");
         }
 
         /// <summary>
@@ -44,7 +48,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <param name="context"></param>
         /// <param name="log"></param>
         /// <param name="emailHelper"></param>
-        protected JobBase(IBusinessDbContext context, ILog log, IEmailHelper emailHelper = null)
+        protected JobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null)
         {
             Context = context;
             Log = log;
@@ -60,7 +64,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// The job work task
         /// </summary>
         /// <param name="argument"></param>
-        protected abstract void DoWork(object argument);
+        protected abstract void DoWork(TParam argument);
 
         /// <summary>
         /// Defines the condition to run job in background
@@ -93,6 +97,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// The Job execution Start Date
         /// </summary>
         public DateTime? StartDate { get; set; }
+
         /// <summary>
         /// The Job last execution End Date
         /// </summary>
@@ -103,7 +108,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="argument"></param>
         /// <returns></returns>
-        public void RunAsync(object argument)
+        public void RunAsync(TParam argument)
         {
             if (IsRunning) return;
 
@@ -119,7 +124,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="argument"></param>
         /// <returns></returns>
-        public bool Run(object argument)
+        public bool Run(TParam argument)
         {
             if (IsRunning) return false;
 
@@ -135,7 +140,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Executes the job, you shouldn't call this method directly
         /// </summary>
         /// <param name="argument"></param>
-        protected void InternalRun(object argument)
+        protected void InternalRun(TParam argument)
         {
             try
             {
@@ -189,6 +194,34 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         {
             get { return _instance ?? (_instance = Activator.CreateInstance(typeof (T), true) as T); }
             protected set { _instance = value; }
+        }
+    }
+
+    /// <summary>
+    /// Creates a job with multiple running options
+    /// </summary>
+    /// <typeparam name="T">The Job type</typeparam>
+    /// <typeparam name="TDbContext">The DbContext type, it must inherent IBusinessDbContext</typeparam>
+    public abstract class JobBase<T, TDbContext> : JobBase<T, TDbContext, object> where T : class
+        where TDbContext : IBusinessDbContext
+    {
+        /// <summary>
+        /// Invalid constructor, you must call the constructor with parameters
+        /// </summary>
+        protected JobBase()
+        {
+            throw new InvalidOperationException("You need to call constructor with parameters in your implementation");
+        }
+
+        /// <summary>
+        /// Creates a new Job, you should call this constructor from base method in your implementation class
+        /// </summary>
+        /// <param name="context"></param>
+        /// <param name="log"></param>
+        /// <param name="emailHelper"></param>
+        protected JobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null)
+            : base(context, log, emailHelper)
+        {
         }
     }
 }

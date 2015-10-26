@@ -8,7 +8,7 @@ using Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
 {
-    class AuditTrailEntry : IAuditTrailEntry
+    public class AuditTrailEntry : IAuditTrailEntry
     {
         [Key]
         public int AuditId { get; set; }

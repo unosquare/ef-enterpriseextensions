@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
 {
-    class Order
+    public class Order
     {
         public Order()
         {

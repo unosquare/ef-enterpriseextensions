@@ -9,7 +9,7 @@ using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
 {
-    internal class SampleDb : BusinessDbContext
+    public class SampleDb : BusinessDbContext
     {
         public string UserId { get; set; }
 
