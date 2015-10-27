@@ -78,12 +78,6 @@
     <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\JobBase.cs">
       <Link>JobBase.cs</Link>
     </Compile>
-    <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\Log\IEmailHelper.cs">
-      <Link>Log\IEmailHelper.cs</Link>
-    </Compile>
-    <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\Log\ILog.cs">
-      <Link>Log\ILog.cs</Link>
-    </Compile>
     <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\ObjectModel\IAuditTrailEntry.cs">
       <Link>ObjectModel\IAuditTrailEntry.cs</Link>
     </Compile>

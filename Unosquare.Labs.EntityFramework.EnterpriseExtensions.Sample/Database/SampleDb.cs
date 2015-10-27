@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
+﻿using System.Data.Common;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
@@ -12,6 +7,11 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database
     public class SampleDb : BusinessDbContext
     {
         public string UserId { get; set; }
+
+        public SampleDb()
+        {
+            
+        }
 
         public SampleDb(DbConnection connection, string userid) : base(connection, true)
         {

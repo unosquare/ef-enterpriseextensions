@@ -1,5 +1,4 @@
 ﻿using System;
-using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Log;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
@@ -9,7 +8,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="TDbContext"></typeparam>
     /// <typeparam name="TParam"></typeparam>
-    public abstract class SingletonJobBase<T, TDbContext, TParam> : JobBase<T, TDbContext, TParam>, IDisposable 
+    public abstract class SingletonJobBase<T, TDbContext, TParam> : JobBase<T, TDbContext, TParam>, IDisposable
         where TDbContext : IBusinessDbContext where TParam : class where T : class
     {
         /// <summary>
@@ -21,9 +20,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Creates a new Job, you should call this constructor from base method in your implementation class
         /// </summary>
         /// <param name="context"></param>
-        /// <param name="log"></param>
-        /// <param name="emailHelper"></param>
-        protected SingletonJobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null) : base(context, log, emailHelper)
+        protected SingletonJobBase(TDbContext context) : base(context)
         {
         }
 
@@ -61,7 +58,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </value>
         public static T Instance
         {
-            get { return _instance ?? (_instance = Activator.CreateInstance(typeof(T), true) as T); }
+            get { return _instance ?? (_instance = Activator.CreateInstance(typeof (T), true) as T); }
             protected set { _instance = value; }
         }
     }
@@ -78,9 +75,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// 
         /// </summary>
         /// <param name="context"></param>
-        /// <param name="log"></param>
-        /// <param name="emailHelper"></param>
-        protected SingletonJobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null) : base(context, log, emailHelper)
+        protected SingletonJobBase(TDbContext context) : base(context)
         {
         }
     }

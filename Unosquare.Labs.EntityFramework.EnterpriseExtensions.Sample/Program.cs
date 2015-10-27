@@ -69,8 +69,9 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 if (SingletonSampleJob.Instance.IsRunning)
                 {
                     OutputInformation("Running non-static job");
-                    var job = new SampleJob(_context, new SimpleConsoleLog());
+                    var job = new SampleJob(_context);
                     job.RunAsync(null);
+                    await Task.Delay(1000);
                     OutputInformation("Non-static Job Status: {0}", job.IsRunning);
                     Jobs.Add(job);
                 }

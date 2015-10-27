@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Threading;
-using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Log;
 using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
@@ -9,7 +8,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
     {
         private static int _counter = 0;
 
-        public SampleJob(SampleDb context, ILog log, IEmailHelper emailHelper = null) : base(context, log, emailHelper)
+        public SampleJob(SampleDb context) : base(context)
         {
         }
 
@@ -31,7 +30,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
     public class SingletonSampleJob : SingletonJobBase<SingletonSampleJob, SampleDb>
     {
-        public SingletonSampleJob() : base(null, new SimpleConsoleLog())
+        public static bool Onetime;
+        public SingletonSampleJob() : base(new SampleDb())
         {
 
         }
@@ -46,7 +46,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         protected override bool BackgroundCondition()
         {
-            return DateTime.Now.Minute%2 == 0;
+            if (Onetime) return false;
+
+            Onetime = true;
+            return true;
         }
     }
 }

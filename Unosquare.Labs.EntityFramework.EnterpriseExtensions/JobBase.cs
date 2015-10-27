@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
-using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Log;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
@@ -21,16 +20,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         protected readonly TDbContext Context;
 
         /// <summary>
-        /// The logger instance
-        /// </summary>
-        protected readonly ILog Log;
-
-        /// <summary>
-        /// The email helper instance
-        /// </summary>
-        protected readonly IEmailHelper EmailHelper;
-
-        /// <summary>
         /// Invalid constructor, you must call the constructor with parameters
         /// </summary>
         protected JobBase()
@@ -42,13 +31,12 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Creates a new Job, you should call this constructor from base method in your implementation class
         /// </summary>
         /// <param name="context"></param>
-        /// <param name="log"></param>
-        /// <param name="emailHelper"></param>
-        protected JobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null)
+        protected JobBase(TDbContext context)
         {
+            if (context == null)
+                throw new ArgumentException("You must pass a DbContext", "context");
+
             Context = context;
-            Log = log;
-            EmailHelper = emailHelper;
         }
 
         /// <summary>
@@ -72,21 +60,37 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Runs the job as a BackgroundWorker
         /// </summary>
         /// <param name="ct"></param>
-        public async void RunBackgroundWork(CancellationToken ct)
+        /// <param name="idleTime"></param>
+        /// <param name="argument"></param>
+        public async void RunBackgroundWork(CancellationToken ct, TimeSpan idleTime, TParam argument = null)
         {
-            while (ct.IsCancellationRequested == false)
+            try
             {
-                while (BackgroundCondition() == false)
+                while (ct.IsCancellationRequested == false)
                 {
-                    await Task.Delay(TimeSpan.FromMinutes(1), ct);
-                }
+                    while (BackgroundCondition() == false)
+                    {
+                        await Task.Delay(idleTime, ct);
+                    }
 
-                EndDate = null;
-                StartDate = DateTime.UtcNow;
-                IsRunning = true;
-                DoWork(null);
-                await Task.Delay(TimeSpan.FromMinutes(1), ct);
+                    InternalRun(argument);
+                    await Task.Delay(idleTime, ct);
+                }
             }
+            catch (TaskCanceledException)
+            {
+                // Ignore only TaskCanceledException
+            }
+        }
+
+        /// <summary>
+        /// Runs the job as a BackgroundWorker with default idle time of 1 minute
+        /// </summary>
+        /// <param name="ct"></param>
+        /// <param name="argument"></param>
+        public void RunBackgroundWork(CancellationToken ct, TParam argument = null)
+        {
+            RunBackgroundWork(ct, TimeSpan.FromMinutes(1), argument);
         }
 
         /// <summary>
@@ -106,13 +110,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <returns></returns>
         public Task RunAsync(TParam argument)
         {
-            if (IsRunning) return null;
-
-            EndDate = null;
-            StartDate = DateTime.UtcNow;
-            IsRunning = true;
-
-            return Task.Run(() => InternalRun(argument));
+            return IsRunning ? null : Task.Run(() => InternalRun(argument));
         }
 
         /// <summary>
@@ -124,9 +122,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         {
             if (IsRunning) return false;
 
-            EndDate = null;
-            StartDate = DateTime.UtcNow;
-            IsRunning = true;
             InternalRun(argument);
 
             return true;
@@ -138,13 +133,13 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <param name="argument"></param>
         private void InternalRun(TParam argument)
         {
+            EndDate = null;
+            StartDate = DateTime.UtcNow;
+            IsRunning = true;
+
             try
             {
                 DoWork(argument);
-            }
-            catch (Exception ex)
-            {
-                Log.Error("InternalRun", ex);
             }
             finally
             {
@@ -167,10 +162,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Creates a new Job, you should call this constructor from base method in your implementation class
         /// </summary>
         /// <param name="context"></param>
-        /// <param name="log"></param>
-        /// <param name="emailHelper"></param>
-        protected JobBase(TDbContext context, ILog log, IEmailHelper emailHelper = null)
-            : base(context, log, emailHelper)
+        protected JobBase(TDbContext context) : base(context)
         {
         }
     }
