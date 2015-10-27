@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
+﻿using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 {

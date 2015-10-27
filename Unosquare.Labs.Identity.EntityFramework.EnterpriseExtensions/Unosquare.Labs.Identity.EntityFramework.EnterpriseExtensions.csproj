@@ -87,6 +87,9 @@
     <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\ObjectModel\IAuditTrailEntry.cs">
       <Link>ObjectModel\IAuditTrailEntry.cs</Link>
     </Compile>
+    <Compile Include="..\Unosquare.Labs.EntityFramework.EnterpriseExtensions\SingletonJobBase.cs">
+      <Link>SingletonJobBase.cs</Link>
+    </Compile>
     <Compile Include="IdentityBusinessDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

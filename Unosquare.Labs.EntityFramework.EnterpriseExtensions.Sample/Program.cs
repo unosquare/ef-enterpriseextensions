@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Effort;
 using Tharga.Toolkit.Console;
@@ -35,7 +34,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 context.SaveChanges();
 
                 var ct = new System.Threading.CancellationToken();
-                Task.Run(() => { SampleJob.Instance.RunBackgroundWork(ct); }, ct);
+                Task.Run(() => { SingletonSampleJob.Instance.RunBackgroundWork(ct); }, ct);
 
                 var command = new RootCommand(console);
 
@@ -44,7 +43,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 command.RegisterCommand(new QueryAuditTrail(context));
                 command.RegisterCommand(new QueryOrder(context));
                 command.RegisterCommand(new ToggleController(context));
-                command.RegisterCommand(new JobController());
+                command.RegisterCommand(new JobController(context));
 
                 var commandEngine = new CommandEngine(command);
 
@@ -54,14 +53,27 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class JobController : ActionCommandBase
         {
-            public JobController()
+            private SampleDb _context;
+            private static readonly List<SampleJob> Jobs = new List<SampleJob>();
+
+            public JobController(SampleDb context)
                 : base("job", "Check Job")
             {
+                _context = context;
             }
 
             public override async Task<bool> InvokeAsync(string paramList)
             {
-                OutputInformation("Job Status: {0}", SampleJob.Instance.IsRunning);
+                OutputInformation("Job Status: {0}", SingletonSampleJob.Instance.IsRunning);
+
+                if (SingletonSampleJob.Instance.IsRunning)
+                {
+                    OutputInformation("Running non-static job");
+                    var job = new SampleJob(_context, new SimpleConsoleLog());
+                    job.RunAsync(null);
+                    OutputInformation("Non-static Job Status: {0}", job.IsRunning);
+                    Jobs.Add(job);
+                }
 
                 return true;
             }
@@ -80,7 +92,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 if (controller == null)
                     controller = new TestController(_context);
             }
-
+            
             public override async Task<bool> InvokeAsync(string paramList)
             {
                 OutputInformation("Toggling controller");

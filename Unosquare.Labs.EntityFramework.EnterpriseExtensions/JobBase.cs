@@ -11,14 +11,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <typeparam name="T">The Job type</typeparam>
     /// <typeparam name="TDbContext">The DbContext type, it must inherent IBusinessDbContext</typeparam>
     /// <typeparam name="TParam">The job input parameter type</typeparam>
-    public abstract class JobBase<T, TDbContext, TParam> : IDisposable
-        where T : class where TDbContext : IBusinessDbContext where TParam : class
+    public abstract class JobBase<T, TDbContext, TParam> where T : class
+        where TDbContext : IBusinessDbContext
+        where TParam : class
     {
-        /// <summary>
-        /// The static, singleton instance reference.
-        /// </summary>
-        protected static T _instance;
-
         /// <summary>
         /// The BusinessDbContext instance
         /// </summary>
@@ -108,15 +104,15 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="argument"></param>
         /// <returns></returns>
-        public void RunAsync(TParam argument)
+        public Task RunAsync(TParam argument)
         {
-            if (IsRunning) return;
+            if (IsRunning) return null;
 
             EndDate = null;
             StartDate = DateTime.UtcNow;
             IsRunning = true;
 
-            Task.Run(() => InternalRun(argument));
+            return Task.Run(() => InternalRun(argument));
         }
 
         /// <summary>
@@ -140,7 +136,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// Executes the job, you shouldn't call this method directly
         /// </summary>
         /// <param name="argument"></param>
-        protected void InternalRun(TParam argument)
+        private void InternalRun(TParam argument)
         {
             try
             {
@@ -157,44 +153,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
                 StartDate = null;
             }
         }
-
-        /// <summary>
-        /// Disposes the job
-        /// </summary>
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
-
-        /// <summary>
-        /// Disposes the job
-        /// </summary>
-        /// <param name="disposeManaged"></param>
-        protected virtual void Dispose(bool disposeManaged)
-        {
-            if (disposeManaged)
-            {
-                // free managed resources
-                if (_instance != null)
-                {
-                    _instance = null;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Gets the instance that this singleton represents.
-        /// If the instance is null, it is constructed ans assigned when this member is accessed.
-        /// </summary>
-        /// <value>
-        /// The instance.
-        /// </value>
-        public static T Instance
-        {
-            get { return _instance ?? (_instance = Activator.CreateInstance(typeof (T), true) as T); }
-            protected set { _instance = value; }
-        }
     }
 
     /// <summary>
@@ -205,14 +163,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     public abstract class JobBase<T, TDbContext> : JobBase<T, TDbContext, object> where T : class
         where TDbContext : IBusinessDbContext
     {
-        /// <summary>
-        /// Invalid constructor, you must call the constructor with parameters
-        /// </summary>
-        protected JobBase()
-        {
-            throw new InvalidOperationException("You need to call constructor with parameters in your implementation");
-        }
-
         /// <summary>
         /// Creates a new Job, you should call this constructor from base method in your implementation class
         /// </summary>
