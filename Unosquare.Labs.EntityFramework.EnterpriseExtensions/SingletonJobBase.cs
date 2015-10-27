@@ -8,7 +8,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="TDbContext"></typeparam>
     /// <typeparam name="TParam"></typeparam>
-    public abstract class SingletonJobBase<T, TDbContext, TParam> : JobBase<T, TDbContext, TParam>, IDisposable
+    public abstract class SingletonJobBase<T, TDbContext, TParam> : JobBase<TDbContext, TParam>, IDisposable
         where TDbContext : IBusinessDbContext where TParam : class where T : class
     {
         /// <summary>

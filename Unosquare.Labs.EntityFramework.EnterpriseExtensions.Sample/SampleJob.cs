@@ -4,7 +4,7 @@ using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 {
-    public class SampleJob : JobBase<SampleJob, SampleDb>
+    public class SampleJob : JobBase<SampleDb>
     {
         private static int _counter = 0;
 
@@ -31,6 +31,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
     public class SingletonSampleJob : SingletonJobBase<SingletonSampleJob, SampleDb>
     {
         public static bool Onetime;
+
         public SingletonSampleJob() : base(new SampleDb())
         {
 

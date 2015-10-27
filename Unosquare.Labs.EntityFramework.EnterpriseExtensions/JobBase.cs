@@ -7,10 +7,9 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <summary>
     /// Creates a job with multiple running options
     /// </summary>
-    /// <typeparam name="T">The Job type</typeparam>
     /// <typeparam name="TDbContext">The DbContext type, it must inherent IBusinessDbContext</typeparam>
     /// <typeparam name="TParam">The job input parameter type</typeparam>
-    public abstract class JobBase<T, TDbContext, TParam> where T : class
+    public abstract class JobBase<TDbContext, TParam>
         where TDbContext : IBusinessDbContext
         where TParam : class
     {
@@ -153,9 +152,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// <summary>
     /// Creates a job with multiple running options
     /// </summary>
-    /// <typeparam name="T">The Job type</typeparam>
     /// <typeparam name="TDbContext">The DbContext type, it must inherent IBusinessDbContext</typeparam>
-    public abstract class JobBase<T, TDbContext> : JobBase<T, TDbContext, object> where T : class
+    public abstract class JobBase<TDbContext> : JobBase<TDbContext, object>
         where TDbContext : IBusinessDbContext
     {
         /// <summary>
