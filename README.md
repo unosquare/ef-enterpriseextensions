@@ -18,11 +18,12 @@ or
 PM> Install-Package Unosquare.Identity.EntityFramework.EnterpriseExtensions
 ```
 
-if you are using Identity EF.
+if you are using Identity Entity Framework.
 
-Use
+Usage
 ---
 
-You need to change your DbContext or IdentityDbContext to BusinessDbContext or IdentityBusinessDbContext. You can attach controllers to your DbContext
-in the constructor and they will execute before <code>SaveChanges</code> method. The controllers require to specified a <code>BusinessRuleAttribute</code> to
+First you need to change your `DbContext` or `IdentityDbContext` to `BusinessDbContext` or `IdentityBusinessDbContext` respectly and you can attach Business Controllers to your DbContext in the constructor. They will execute before anytime you call `SaveChanges` method. The controllers require to specified a `BusinessRuleAttribute` to
 identify what CRUD action and which Entity types will be processed.
+
+EF Enterprise Extensions includes a `JobBase` abstract class (with a singleton extension named `SingletonJobBase`), so you can build business jobs easily. Check the Sample app.
