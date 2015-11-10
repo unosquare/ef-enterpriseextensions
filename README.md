@@ -28,8 +28,8 @@ identify what CRUD action and which Entity types will be processed.
 
 EF Enterprise Extensions includes a `JobBase` abstract class (with a singleton extension named `SingletonJobBase`), so you can build business jobs easily. Check the Sample app.
 
-Audit Trail
-----------
+Business Rules - Audit Trail
+----------------------------
 
 Audit Trails is a task to save the changes to any operation perform in a record. In other words, capture what change between any data saving. This operation is important in many system and you can accomplish with these extensions easily. The `AuditTrailController` can be attached to your `BusinessDbContext`and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.
 
@@ -72,3 +72,8 @@ public class SampleDb : BusinessDbContext
 ```
 
 By default, all the entities will be audited, you can access to the Audit Trail controller and set up the action-types relation with the method `AddTypes`. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.
+
+Jobs
+----
+
+The *Jobs* are wrapper to your tasks. They can run in single instance (singletons with `SingletonJobBase`) or with multiple executions using `JobBase`. You can execute them in your ASP.NET applications (WebApi too) using the `HostingEnvironment.QueueBackgroundWorkItem` method in .NET 4.6 and setup your execution condition with a datetime or a flag.
