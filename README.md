@@ -77,3 +77,9 @@ Jobs
 ----
 
 The *Jobs* are wrapper to your tasks. They can run in single instance (singletons with `SingletonJobBase`) or with multiple executions using `JobBase`. You can execute them in your ASP.NET applications (WebApi too) using the `HostingEnvironment.QueueBackgroundWorkItem` method in .NET 4.6 and setup your execution condition with a datetime or a flag.
+
+To begin using this Jobs, you need to create a class and inherent from SingletonJobBase or JobBase and fill the implementation methods. The jobs exposes three executions modes:
+
+* **Run** - The simple non-async way to execute the task. You can provide your own ThreadPool or mechanism to execute them. Returns true if the task was executed.
+* **RunAsync** - An awaitable method to run your task.
+* **RunBackgroundWork** - The ideal method to keep a scheduled task, with an optional idle timespan. You can use this method with `HostingEnvironment.QueueBackgroundWorkItem` and your BackgroundCondition method to generate a cron-like system in your OWIN application.
