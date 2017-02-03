@@ -49,6 +49,8 @@
     public abstract class BusinessRulesController<T> : IBusinessRulesController
         where T : DbContext
     {
+        const string DynamicProxiesNamespace = "System.Data.Entity.DynamicProxies";
+
         /// <summary>
         /// Gets or sets the context.
         /// </summary>
@@ -89,7 +91,7 @@
         public Type GetEntityType(object entity)
         {
             var entityType = entity.GetType();
-            if (entityType.BaseType != null && entityType.Namespace == Common.DynamicProxiesNamespace)
+            if (entityType.BaseType != null && entityType.Namespace == DynamicProxiesNamespace)
                 entityType = entityType.BaseType;
 
             return entityType;
@@ -111,7 +113,7 @@
                 if (entity == null) continue;
                 var entityType = entity.GetType();
 
-                if (entityType.BaseType != null && entityType.Namespace == "System.Data.Entity.DynamicProxies")
+                if (entityType.BaseType != null && entityType.Namespace == DynamicProxiesNamespace)
                     entityType = entityType.BaseType;
 
                 var methods = methodInfoSet.Where(m => m.GetCustomAttributes(typeof (BusinessRuleAttribute), true)

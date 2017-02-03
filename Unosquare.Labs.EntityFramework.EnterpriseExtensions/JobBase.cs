@@ -33,7 +33,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         protected JobBase(TDbContext context)
         {
             if (context == null)
-                throw new ArgumentException("You must pass a DbContext", "context");
+                throw new ArgumentException("You must pass a DbContext", nameof(context));
 
             Context = context;
         }

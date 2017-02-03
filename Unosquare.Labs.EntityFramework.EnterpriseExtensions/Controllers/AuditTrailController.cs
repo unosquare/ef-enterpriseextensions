@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using Newtonsoft.Json;
-using Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.Entity;
+    using System.Data.Entity.Infrastructure;
+    using System.Linq;
+    using Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel;
+    using Unosquare.Swan.Formatters;
+
     /// <summary>
     /// Represents an AuditTrail controller
     /// </summary>
@@ -39,7 +39,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
         /// <param name="type"></param>
         public void AddTypes(ActionFlags action, Type type)
         {
-            AddTypes(action, new[] {type});
+            AddTypes(action, new[] { type });
         }
 
         /// <summary>
@@ -112,16 +112,16 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             if (string.IsNullOrWhiteSpace(_currentUserId)) return;
 
             var entityState =
-                ((IObjectContextAdapter) Context).ObjectContext.ObjectStateManager.GetObjectStateEntry(entity);
+                ((IObjectContextAdapter)Context).ObjectContext.ObjectStateManager.GetObjectStateEntry(entity);
 
-            var instance = (IAuditTrailEntry) Activator.CreateInstance<TEntity>();
+            var instance = (IAuditTrailEntry)Activator.CreateInstance<TEntity>();
             instance.TableName = name;
             instance.DateCreated = DateTime.UtcNow;
-            instance.Action = (int) flag;
+            instance.Action = (int)flag;
             instance.UserId = _currentUserId;
 
             if (flag != ActionFlags.Delete)
-                instance.JsonBody = JsonConvert.SerializeObject(ToDictionary(entityState.CurrentValues));
+                instance.JsonBody = Json.Serialize(ToDictionary(entityState.CurrentValues));
 
             Context.Entry(instance).State = EntityState.Added;
         }
@@ -134,9 +134,9 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
             {
                 var fieldType = record.GetFieldType(keyIndex);
 
-                if (fieldType == typeof (byte[]))
+                if (fieldType == typeof(byte[]))
                     result[record.GetName(keyIndex)] = "(Blob)";
-                else if (Common.PrimitiveTypes.Contains(fieldType))
+                else if (Swan.Definitions.AllBasicValueAndStringTypes.Contains(fieldType))
                     result[record.GetName(keyIndex)] = record.GetValue(keyIndex);
             }
 
@@ -158,7 +158,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
         public static IBusinessDbContext UseAuditTrail<T, TEntity>(this IBusinessDbContext context, string currentUserId)
             where T : DbContext
         {
-            context.AddController(new AuditTrailController<T, TEntity>((T) context, currentUserId));
+            context.AddController(new AuditTrailController<T, TEntity>((T)context, currentUserId));
 
             return context;
         }
