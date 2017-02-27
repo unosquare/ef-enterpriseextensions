@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BusinessDbContext
+   | Entity Framework Enterprise Extensions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BusinessDbContext
+   | Entity Framework Enterprise Extensions ">
+    <meta name="generator" content="docfx 2.12.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext">Class BusinessDbContext
+              </h1>
+              <div class="markdown level0 summary"><p>Creates a new DbContext with support to run BusinessControllers</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">BusinessDbContext</span></div>
+              </div>
+              <h6><strong>Namespace</strong>:Unosquare.Labs.EntityFramework.EnterpriseExtensions</h6>
+              <h6><strong>Assembly</strong>:cs.temp.dll.dll</h6>
+              <h5 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class BusinessDbContext : DbContext, IBusinessDbContext</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor">BusinessDbContext()</h4>
+              <div class="markdown level1 summary"><p>Instances a new DbContext</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected BusinessDbContext()</code></pre>
+              </div>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_DbConnection_System_Boolean_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(DbConnection,System.Boolean)">BusinessDbContext(DbConnection, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Instances a new DbContext with a DbConnection</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected BusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">DbConnection</span></td>
+                    <td><span class="parametername">dbConnection</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">contextOwnsConnection</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_System_String_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(System.String)">BusinessDbContext(String)</h4>
+              <div class="markdown level1 summary"><p>Instances a new DbContext with a connection name</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected BusinessDbContext(string connectionName)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">connectionName</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_AddController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_AddController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)">AddController(IBusinessRulesController)</h4>
+              <div class="markdown level1 summary"><p>Adds a new BusinessController to the DbContext</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void AddController(IBusinessRulesController controller)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html">IBusinessRulesController</a></td>
+                    <td><span class="parametername">controller</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_AddController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_">IBusinessDbContext.AddController(IBusinessRulesController)</a></div>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_ContainsController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_ContainsController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)">ContainsController(IBusinessRulesController)</h4>
+              <div class="markdown level1 summary"><p>Checks if a BusinessController exists</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool ContainsController(IBusinessRulesController controller)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html">IBusinessRulesController</a></td>
+                    <td><span class="parametername">controller</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_ContainsController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_">IBusinessDbContext.ContainsController(IBusinessRulesController)</a></div>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)">RemoveController(IBusinessRulesController)</h4>
+              <div class="markdown level1 summary"><p>Removes a new BusinessController to the DbContext</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public void RemoveController(IBusinessRulesController controller)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html">IBusinessRulesController</a></td>
+                    <td><span class="parametername">controller</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_">IBusinessDbContext.RemoveController(IBusinessRulesController)</a></div>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges">SaveChanges()</h4>
+              <div class="markdown level1 summary"><p>Save Changes and run all the business controllers</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override int SaveChanges()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync">SaveChangesAsync()</h4>
+              <div class="markdown level1 summary"><p>Save Changes Async and run all the business controllers</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override Task&lt;int&gt; SaveChangesAsync()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
+              <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync*"></a>
+              <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_System_Threading_CancellationToken_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync(System.Threading.CancellationToken)">SaveChangesAsync(CancellationToken)</h4>
+              <div class="markdown level1 summary"><p>Save Changes Async and run all the business controllers</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public override Task&lt;int&gt; SaveChangesAsync(CancellationToken cancellationToken)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.CancellationToken</span></td>
+                    <td><span class="parametername">cancellationToken</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

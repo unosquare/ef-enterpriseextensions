@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ef-enterpriseextensions | Entity Framework Enterprise Extensions </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ef-enterpriseextensions | Entity Framework Enterprise Extensions ">
+    <meta name="generator" content="docfx 2.12.1.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+              <h1 id="ef-enterpriseextensions">ef-enterpriseextensions</h1>
+              
+<p><a href="https://ci.appveyor.com/project/geoperez/ef-enterpriseextensions"><img src="https://ci.appveyor.com/api/projects/status/6e5vk7s69ur34nd0?svg=true" alt="Build status"></a></p>
+<p>Unosquare Labs EntityFramework.EnterpriseExtensions Library contains a set of useful helpers and classes to common tasks related to process and data manipulation in enterprise applications.</p>
+<h2 id="nuget-installation">NuGet Installation:</h2>
+<p><a href="https://badge.fury.io/nu/Unosquare.EntityFramework.EnterpriseExtensions"><img src="https://badge.fury.io/nu/Unosquare.EntityFramework.EnterpriseExtensions.svg" alt="NuGet version"></a></p>
+<pre><code>PM&gt; Install-Package Unosquare.EntityFramework.EnterpriseExtensions
+</code></pre><p>or</p>
+<p><a href="https://badge.fury.io/nu/Unosquare.Identity.EntityFramework.EnterpriseExtensions"><img src="https://badge.fury.io/nu/Unosquare.Identity.EntityFramework.EnterpriseExtensions.svg" alt="NuGet version"></a></p>
+<pre><code>PM&gt; Install-Package Unosquare.Identity.EntityFramework.EnterpriseExtensions
+</code></pre><p>if you are using Identity Entity Framework.</p>
+<h2 id="usage">Usage</h2>
+<p>First you need to change your <code>DbContext</code> or <code>IdentityDbContext</code> to <code>BusinessDbContext</code> or <code>IdentityBusinessDbContext</code> respectly and you can attach Business Controllers to your DbContext in the constructor. They will execute before anytime you call <code>SaveChanges</code> method. The controllers require to specified a <code>BusinessRuleAttribute</code> to
+identify what CRUD action and which Entity types will be processed.</p>
+<p>EF Enterprise Extensions includes a <code>JobBase</code> abstract class (with a singleton extension named <code>SingletonJobBase</code>), so you can build business jobs easily. Check the Sample app.</p>
+<h2 id="business-rules---audit-trail">Business Rules - Audit Trail</h2>
+<p>Audit Trails is a task to save the changes to any operation perform in a record. In other words, capture what change between any data saving. This operation is important in many system and you can accomplish with these extensions easily. The <code>AuditTrailController</code> can be attached to your <code>BusinessDbContext</code>and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.</p>
+<p>To start using the <code>AuditTrailController</code> you need to specify a table where the Audit Trail data will be, you should implement the <code>IAuditTrailEntry</code> interface in your entity, for example:</p>
+<pre><code class="lang-csharp">public class AuditTrailEntry : IAuditTrailEntry
+    {
+        [Key]
+        public int AuditId { get; set; }
+
+        public string UserId { get; set; }
+        public string TableName { get; set; }
+        public int Action { get; set; }
+        public string JsonBody { get; set; }
+        public DateTime DateCreated { get; set; }
+    }
+</code></pre><p>Since you need to know who change the data, you need to construct your DataContext with the user relation. For example in Web API you can send the UserId from the request in the DataContext constructor. The <code>AuditTrailController</code> requires two parameters, the DbContext instance and a string to identify the user, and two type parameters, the DbContext type and the AudiTrailEntry type.  You can call the extension method <code>UseAuditTrail</code> to add the Business Controller to your Business DataContext.</p>
+<pre><code class="lang-csharp">public class SampleDb : BusinessDbContext
+    {
+        public string UserId { get; set; }
+
+        public SampleDb(DbConnection connection, string userid) : base(connection, true)
+        {
+            UserId = userid;
+            this.UseAuditTrail&lt;SampleDb, AuditTrailEntry&gt;(userid);
+        }
+
+        public DbSet&lt;AuditTrailEntry&gt; AuditTrailEntrys { get; set; }
+
+        public DbSet&lt;Order&gt; Orders { get; set; }
+        public DbSet&lt;OrderDetail&gt; OrderDetails { get; set; }
+        public DbSet&lt;Product&gt; Products { get; set; }
+    }
+</code></pre><p>By default, all the entities will be audited, you can access to the Audit Trail controller and set up the action-types relation with the method <code>AddTypes</code>. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.</p>
+<h2 id="jobs">Jobs</h2>
+<p>The <em>Jobs</em> are wrapper to your tasks. They can run in single instance (singletons with <code>SingletonJobBase</code>) or with multiple executions using <code>JobBase</code>. You can execute them in your ASP.NET applications (WebApi too) using the <code>HostingEnvironment.QueueBackgroundWorkItem</code> method in .NET 4.6 and setup your execution condition with a datetime or a flag.</p>
+<p>To begin using this Jobs, you need to create a class and inherent from SingletonJobBase or JobBase and fill the implementation methods. The jobs exposes three executions modes:</p>
+<ul>
+<li><strong>Run</strong> - The simple non-async way to execute the task. You can provide your own ThreadPool or mechanism to execute them. Returns true if the task was executed.</li>
+<li><strong>RunAsync</strong> - An awaitable method to run your task.</li>
+<li><strong>RunBackgroundWork</strong> - The ideal method to keep a scheduled task, with an optional idle timespan. You can use this method with <code>HostingEnvironment.QueueBackgroundWorkItem</code> and your BackgroundCondition method to generate a cron-like system in your OWIN application.</li>
+</ul>
+
+            </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/unosquare/ef-enterpriseextensions/blob/master/README.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

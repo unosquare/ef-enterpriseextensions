@@ -1,0 +1,965 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions
+  name: Unosquare.Labs.EntityFramework.EnterpriseExtensions
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.html
+  commentId: N:Unosquare.Labs.EntityFramework.EnterpriseExtensions
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions
+  nameWithType: Unosquare.Labs.EntityFramework.EnterpriseExtensions
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags
+  name: ActionFlags
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags
+  nameWithType: ActionFlags
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Create
+  name: Create
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_Create
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Create
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Create
+  nameWithType: ActionFlags.Create
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Delete
+  name: Delete
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_Delete
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Delete
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Delete
+  nameWithType: ActionFlags.Delete
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.None
+  name: None
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_None
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.None
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.None
+  nameWithType: ActionFlags.None
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Update
+  name: Update
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_Update
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Update
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags.Update
+  nameWithType: ActionFlags.Update
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext
+  name: BusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext
+  nameWithType: BusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
+  name: BusinessDbContext()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext()
+  nameWithType: BusinessDbContext.BusinessDbContext()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(DbConnection,System.Boolean)
+  name: BusinessDbContext(DbConnection, Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_DbConnection_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(DbConnection,System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext(DbConnection, System.Boolean)
+  nameWithType: BusinessDbContext.BusinessDbContext(DbConnection, Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(System.String)
+  name: BusinessDbContext(String)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_System_String_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(System.String)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext(System.String)
+  nameWithType: BusinessDbContext.BusinessDbContext(String)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor*
+  name: BusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext
+  nameWithType: BusinessDbContext.BusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: AddController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_AddController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: BusinessDbContext.AddController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController*
+  name: AddController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_AddController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController
+  nameWithType: BusinessDbContext.AddController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: ContainsController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_ContainsController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: BusinessDbContext.ContainsController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController*
+  name: ContainsController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_ContainsController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController
+  nameWithType: BusinessDbContext.ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: RemoveController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: BusinessDbContext.RemoveController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController*
+  name: RemoveController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController
+  nameWithType: BusinessDbContext.RemoveController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
+  name: SaveChanges()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges()
+  nameWithType: BusinessDbContext.SaveChanges()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges*
+  name: SaveChanges
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
+  nameWithType: BusinessDbContext.SaveChanges
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync()
+  nameWithType: BusinessDbContext.SaveChangesAsync()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync(System.Threading.CancellationToken)
+  name: SaveChangesAsync(CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_System_Threading_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync(System.Threading.CancellationToken)
+  nameWithType: BusinessDbContext.SaveChangesAsync(CancellationToken)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
+  nameWithType: BusinessDbContext.SaveChangesAsync
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
+  name: BusinessRuleAttribute
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
+  nameWithType: BusinessRuleAttribute
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  name: BusinessRuleAttribute(Type, ActionFlags)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_Type_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type, Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  nameWithType: BusinessRuleAttribute.BusinessRuleAttribute(Type, ActionFlags)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  name: BusinessRuleAttribute(Type[], ActionFlags)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_Type___Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  name.vb: BusinessRuleAttribute(Type(), ActionFlags)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type[], Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type(), Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  nameWithType: BusinessRuleAttribute.BusinessRuleAttribute(Type[], ActionFlags)
+  nameWithType.vb: BusinessRuleAttribute.BusinessRuleAttribute(Type(), ActionFlags)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  name: BusinessRuleAttribute(ActionFlags)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  nameWithType: BusinessRuleAttribute.BusinessRuleAttribute(ActionFlags)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor*
+  name: BusinessRuleAttribute
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute
+  nameWithType: BusinessRuleAttribute.BusinessRuleAttribute
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  name: Action
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_Action
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  nameWithType: BusinessRuleAttribute.Action
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action*
+  name: Action
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_Action_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  nameWithType: BusinessRuleAttribute.Action
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  name: EntityTypes
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_EntityTypes
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  nameWithType: BusinessRuleAttribute.EntityTypes
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes*
+  name: EntityTypes
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_EntityTypes_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  nameWithType: BusinessRuleAttribute.EntityTypes
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1
+  name: BusinessRulesController<T>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1
+  name.vb: BusinessRulesController(Of T)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T)
+  nameWithType: BusinessRulesController<T>
+  nameWithType.vb: BusinessRulesController(Of T)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.#ctor(`0)
+  name: BusinessRulesController(T)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1__ctor__0_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.#ctor(`0)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.BusinessRulesController(T)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).BusinessRulesController(T)
+  nameWithType: BusinessRulesController<T>.BusinessRulesController(T)
+  nameWithType.vb: BusinessRulesController(Of T).BusinessRulesController(T)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.#ctor*
+  name: BusinessRulesController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.BusinessRulesController
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).BusinessRulesController
+  nameWithType: BusinessRulesController<T>.BusinessRulesController
+  nameWithType.vb: BusinessRulesController(Of T).BusinessRulesController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.Context
+  name: Context
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_Context
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.Context
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.Context
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).Context
+  nameWithType: BusinessRulesController<T>.Context
+  nameWithType.vb: BusinessRulesController(Of T).Context
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.Context*
+  name: Context
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_Context_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.Context
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.Context
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).Context
+  nameWithType: BusinessRulesController<T>.Context
+  nameWithType.vb: BusinessRulesController(Of T).Context
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.GetEntityType(System.Object)
+  name: GetEntityType(Object)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_GetEntityType_System_Object_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.GetEntityType(System.Object)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.GetEntityType(System.Object)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).GetEntityType(System.Object)
+  nameWithType: BusinessRulesController<T>.GetEntityType(Object)
+  nameWithType.vb: BusinessRulesController(Of T).GetEntityType(Object)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.GetEntityType*
+  name: GetEntityType
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_GetEntityType_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.GetEntityType
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.GetEntityType
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).GetEntityType
+  nameWithType: BusinessRulesController<T>.GetEntityType
+  nameWithType.vb: BusinessRulesController(Of T).GetEntityType
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.RunBusinessRules
+  name: RunBusinessRules()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_RunBusinessRules
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.RunBusinessRules
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.RunBusinessRules()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).RunBusinessRules()
+  nameWithType: BusinessRulesController<T>.RunBusinessRules()
+  nameWithType.vb: BusinessRulesController(Of T).RunBusinessRules()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.RunBusinessRules*
+  name: RunBusinessRules
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_RunBusinessRules_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.RunBusinessRules
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.RunBusinessRules
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).RunBusinessRules
+  nameWithType: BusinessRulesController<T>.RunBusinessRules
+  nameWithType.vb: BusinessRulesController(Of T).RunBusinessRules
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+  name: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.html
+  commentId: N:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+  nameWithType: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2
+  name: AuditTrailController<T, TEntity>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2
+  name.vb: AuditTrailController(Of T, TEntity)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity)
+  nameWithType: AuditTrailController<T, TEntity>
+  nameWithType.vb: AuditTrailController(Of T, TEntity)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.#ctor(`0,System.String)
+  name: AuditTrailController(T, String)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2__ctor__0_System_String_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.#ctor(`0,System.String)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AuditTrailController(T, System.String)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AuditTrailController(T, System.String)
+  nameWithType: AuditTrailController<T, TEntity>.AuditTrailController(T, String)
+  nameWithType.vb: AuditTrailController(Of T, TEntity).AuditTrailController(T, String)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.#ctor*
+  name: AuditTrailController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AuditTrailController
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AuditTrailController
+  nameWithType: AuditTrailController<T, TEntity>.AuditTrailController
+  nameWithType.vb: AuditTrailController(Of T, TEntity).AuditTrailController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags,System.Type)
+  name: AddTypes(ActionFlags, Type)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_AddTypes_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_System_Type_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags,System.Type)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags, System.Type)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags, System.Type)
+  nameWithType: AuditTrailController<T, TEntity>.AddTypes(ActionFlags, Type)
+  nameWithType.vb: AuditTrailController(Of T, TEntity).AddTypes(ActionFlags, Type)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags,System.Type[])
+  name: AddTypes(ActionFlags, Type[])
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_AddTypes_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_System_Type___
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags,System.Type[])
+  name.vb: AddTypes(ActionFlags, Type())
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags, System.Type[])
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AddTypes(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags, System.Type())
+  nameWithType: AuditTrailController<T, TEntity>.AddTypes(ActionFlags, Type[])
+  nameWithType.vb: AuditTrailController(Of T, TEntity).AddTypes(ActionFlags, Type())
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes*
+  name: AddTypes
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_AddTypes_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AddTypes
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AddTypes
+  nameWithType: AuditTrailController<T, TEntity>.AddTypes
+  nameWithType.vb: AuditTrailController(Of T, TEntity).AddTypes
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityCreated(System.Object)
+  name: OnEntityCreated(Object)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityCreated_System_Object_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityCreated(System.Object)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityCreated(System.Object)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityCreated(System.Object)
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityCreated(Object)
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityCreated(Object)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityCreated*
+  name: OnEntityCreated
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityCreated_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityCreated
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityCreated
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityCreated
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityCreated
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityCreated
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityDeleted(System.Object)
+  name: OnEntityDeleted(Object)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityDeleted_System_Object_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityDeleted(System.Object)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityDeleted(System.Object)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityDeleted(System.Object)
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityDeleted(Object)
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityDeleted(Object)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityDeleted*
+  name: OnEntityDeleted
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityDeleted_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityDeleted
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityDeleted
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityDeleted
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityDeleted
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityDeleted
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityUpdated(System.Object)
+  name: OnEntityUpdated(Object)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityUpdated_System_Object_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityUpdated(System.Object)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityUpdated(System.Object)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityUpdated(System.Object)
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityUpdated(Object)
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityUpdated(Object)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityUpdated*
+  name: OnEntityUpdated
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityUpdated_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityUpdated
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityUpdated
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityUpdated
+  nameWithType: AuditTrailController<T, TEntity>.OnEntityUpdated
+  nameWithType.vb: AuditTrailController(Of T, TEntity).OnEntityUpdated
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension
+  name: FluentAuditTrailExtension
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension
+  nameWithType: FluentAuditTrailExtension
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail*
+  name: UseAuditTrail
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_FluentAuditTrailExtension_UseAuditTrail_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail
+  nameWithType: FluentAuditTrailExtension.UseAuditTrail
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail``2(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext,System.String)
+  name: UseAuditTrail<T, TEntity>(IBusinessDbContext, String)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_FluentAuditTrailExtension_UseAuditTrail__2_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_System_String_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail``2(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext,System.String)
+  name.vb: UseAuditTrail(Of T, TEntity)(IBusinessDbContext, String)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail<T, TEntity>(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext, System.String)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail(Of T, TEntity)(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext, System.String)
+  nameWithType: FluentAuditTrailExtension.UseAuditTrail<T, TEntity>(IBusinessDbContext, String)
+  nameWithType.vb: FluentAuditTrailExtension.UseAuditTrail(Of T, TEntity)(IBusinessDbContext, String)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext
+  name: IBusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext
+  nameWithType: IBusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: AddController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_AddController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IBusinessDbContext.AddController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController*
+  name: AddController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_AddController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController
+  nameWithType: IBusinessDbContext.AddController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: ContainsController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_ContainsController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IBusinessDbContext.ContainsController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController*
+  name: ContainsController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_ContainsController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController
+  nameWithType: IBusinessDbContext.ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: RemoveController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IBusinessDbContext.RemoveController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController*
+  name: RemoveController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_RemoveController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController
+  nameWithType: IBusinessDbContext.RemoveController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController
+  name: IBusinessRulesController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController
+  nameWithType: IBusinessRulesController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
+  name: RunBusinessRules()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_RunBusinessRules
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules()
+  nameWithType: IBusinessRulesController.RunBusinessRules()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules*
+  name: RunBusinessRules
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_RunBusinessRules_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
+  nameWithType: IBusinessRulesController.RunBusinessRules
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
+  name: IdentityBusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
+  nameWithType: IdentityBusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1
+  name: IdentityBusinessDbContext<TUser>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1
+  name.vb: IdentityBusinessDbContext(Of TUser)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser)
+  nameWithType: IdentityBusinessDbContext<TUser>
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
+  name: IdentityBusinessDbContext()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext()
+  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext()
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(DbConnection,System.Boolean)
+  name: IdentityBusinessDbContext(DbConnection, Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_DbConnection_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(DbConnection,System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(DbConnection, System.Boolean)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(DbConnection, System.Boolean)
+  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(DbConnection, Boolean)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(DbConnection, Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(System.String)
+  name: IdentityBusinessDbContext(String)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_System_String_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(System.String)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(System.String)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(System.String)
+  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(String)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(String)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(System.String,System.Boolean)
+  name: IdentityBusinessDbContext(String, Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_System_String_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(System.String,System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(System.String, System.Boolean)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(System.String, System.Boolean)
+  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext(String, Boolean)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext(String, Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor*
+  name: IdentityBusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext
+  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: AddController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_AddController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IdentityBusinessDbContext<TUser>.AddController(IBusinessRulesController)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).AddController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.AddController*
+  name: AddController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_AddController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.AddController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.AddController
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).AddController
+  nameWithType: IdentityBusinessDbContext<TUser>.AddController
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).AddController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: ContainsController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_ContainsController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IdentityBusinessDbContext<TUser>.ContainsController(IBusinessRulesController)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).ContainsController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.ContainsController*
+  name: ContainsController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_ContainsController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.ContainsController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.ContainsController
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).ContainsController
+  nameWithType: IdentityBusinessDbContext<TUser>.ContainsController
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  name: RemoveController(IBusinessRulesController)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
+  nameWithType: IdentityBusinessDbContext<TUser>.RemoveController(IBusinessRulesController)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).RemoveController(IBusinessRulesController)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController*
+  name: RemoveController
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_RemoveController_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.RemoveController
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).RemoveController
+  nameWithType: IdentityBusinessDbContext<TUser>.RemoveController
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).RemoveController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChanges
+  name: SaveChanges()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChanges
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChanges
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChanges()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChanges()
+  nameWithType: IdentityBusinessDbContext<TUser>.SaveChanges()
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).SaveChanges()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChanges*
+  name: SaveChanges
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChanges_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChanges
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChanges
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChanges
+  nameWithType: IdentityBusinessDbContext<TUser>.SaveChanges
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).SaveChanges
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync
+  name: SaveChangesAsync()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChangesAsync
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChangesAsync()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChangesAsync()
+  nameWithType: IdentityBusinessDbContext<TUser>.SaveChangesAsync()
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).SaveChangesAsync()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync(System.Threading.CancellationToken)
+  name: SaveChangesAsync(CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChangesAsync_System_Threading_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChangesAsync(System.Threading.CancellationToken)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChangesAsync(System.Threading.CancellationToken)
+  nameWithType: IdentityBusinessDbContext<TUser>.SaveChangesAsync(CancellationToken)
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).SaveChangesAsync(CancellationToken)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync*
+  name: SaveChangesAsync
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChangesAsync_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChangesAsync
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChangesAsync
+  nameWithType: IdentityBusinessDbContext<TUser>.SaveChangesAsync
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).SaveChangesAsync
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1
+  name: JobBase<TDbContext>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-1.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1
+  name.vb: JobBase(Of TDbContext)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext)
+  nameWithType: JobBase<TDbContext>
+  nameWithType.vb: JobBase(Of TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1.#ctor(`0)
+  name: JobBase(TDbContext)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_1__ctor__0_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1.#ctor(`0)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext>.JobBase(TDbContext)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext).JobBase(TDbContext)
+  nameWithType: JobBase<TDbContext>.JobBase(TDbContext)
+  nameWithType.vb: JobBase(Of TDbContext).JobBase(TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1.#ctor*
+  name: JobBase
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_1__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext>.JobBase
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext).JobBase
+  nameWithType: JobBase<TDbContext>.JobBase
+  nameWithType.vb: JobBase(Of TDbContext).JobBase
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2
+  name: JobBase<TDbContext, TParam>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2
+  name.vb: JobBase(Of TDbContext, TParam)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam)
+  nameWithType: JobBase<TDbContext, TParam>
+  nameWithType.vb: JobBase(Of TDbContext, TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor
+  name: JobBase()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2__ctor
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.JobBase()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).JobBase()
+  nameWithType: JobBase<TDbContext, TParam>.JobBase()
+  nameWithType.vb: JobBase(Of TDbContext, TParam).JobBase()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor(`0)
+  name: JobBase(TDbContext)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2__ctor__0_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor(`0)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.JobBase(TDbContext)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).JobBase(TDbContext)
+  nameWithType: JobBase<TDbContext, TParam>.JobBase(TDbContext)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).JobBase(TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor*
+  name: JobBase
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.JobBase
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).JobBase
+  nameWithType: JobBase<TDbContext, TParam>.JobBase
+  nameWithType.vb: JobBase(Of TDbContext, TParam).JobBase
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.BackgroundCondition
+  name: BackgroundCondition()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_BackgroundCondition
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.BackgroundCondition
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.BackgroundCondition()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).BackgroundCondition()
+  nameWithType: JobBase<TDbContext, TParam>.BackgroundCondition()
+  nameWithType.vb: JobBase(Of TDbContext, TParam).BackgroundCondition()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.BackgroundCondition*
+  name: BackgroundCondition
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_BackgroundCondition_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.BackgroundCondition
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.BackgroundCondition
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).BackgroundCondition
+  nameWithType: JobBase<TDbContext, TParam>.BackgroundCondition
+  nameWithType.vb: JobBase(Of TDbContext, TParam).BackgroundCondition
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Context
+  name: Context
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Context
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Context
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Context
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Context
+  nameWithType: JobBase<TDbContext, TParam>.Context
+  nameWithType.vb: JobBase(Of TDbContext, TParam).Context
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1)
+  name: DoWork(TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork(TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork(TParam)
+  nameWithType: JobBase<TDbContext, TParam>.DoWork(TParam)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).DoWork(TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork*
+  name: DoWork
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork
+  nameWithType: JobBase<TDbContext, TParam>.DoWork
+  nameWithType.vb: JobBase(Of TDbContext, TParam).DoWork
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.EndDate
+  name: EndDate
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_EndDate
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.EndDate
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.EndDate
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).EndDate
+  nameWithType: JobBase<TDbContext, TParam>.EndDate
+  nameWithType.vb: JobBase(Of TDbContext, TParam).EndDate
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.EndDate*
+  name: EndDate
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_EndDate_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.EndDate
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.EndDate
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).EndDate
+  nameWithType: JobBase<TDbContext, TParam>.EndDate
+  nameWithType.vb: JobBase(Of TDbContext, TParam).EndDate
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.IsRunning
+  name: IsRunning
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_IsRunning
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.IsRunning
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.IsRunning
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).IsRunning
+  nameWithType: JobBase<TDbContext, TParam>.IsRunning
+  nameWithType.vb: JobBase(Of TDbContext, TParam).IsRunning
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.IsRunning*
+  name: IsRunning
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_IsRunning_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.IsRunning
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.IsRunning
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).IsRunning
+  nameWithType: JobBase<TDbContext, TParam>.IsRunning
+  nameWithType.vb: JobBase(Of TDbContext, TParam).IsRunning
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run(`1)
+  name: Run(TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Run__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run(`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Run(TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run(TParam)
+  nameWithType: JobBase<TDbContext, TParam>.Run(TParam)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).Run(TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run*
+  name: Run
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Run_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Run
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run
+  nameWithType: JobBase<TDbContext, TParam>.Run
+  nameWithType.vb: JobBase(Of TDbContext, TParam).Run
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1)
+  name: RunAsync(TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync(TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync(TParam)
+  nameWithType: JobBase<TDbContext, TParam>.RunAsync(TParam)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync(TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync*
+  name: RunAsync
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync
+  nameWithType: JobBase<TDbContext, TParam>.RunAsync
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,`1)
+  name: RunBackgroundWork(CancellationToken, TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(System.Threading.CancellationToken, TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(System.Threading.CancellationToken, TParam)
+  nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TParam)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,TimeSpan,`1)
+  name: RunBackgroundWork(CancellationToken, TimeSpan, TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken_TimeSpan__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,TimeSpan,`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(System.Threading.CancellationToken, TimeSpan, TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(System.Threading.CancellationToken, TimeSpan, TParam)
+  nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TimeSpan, TParam)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TimeSpan, TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork*
+  name: RunBackgroundWork
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork
+  nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunBackgroundWork
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.StartDate
+  name: StartDate
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_StartDate
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.StartDate
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.StartDate
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).StartDate
+  nameWithType: JobBase<TDbContext, TParam>.StartDate
+  nameWithType.vb: JobBase(Of TDbContext, TParam).StartDate
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.StartDate*
+  name: StartDate
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_StartDate_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.StartDate
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.StartDate
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).StartDate
+  nameWithType: JobBase<TDbContext, TParam>.StartDate
+  nameWithType.vb: JobBase(Of TDbContext, TParam).StartDate
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel
+  name: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.html
+  commentId: N:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel
+  nameWithType: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry
+  name: IAuditTrailEntry
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry
+  nameWithType: IAuditTrailEntry
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  name: Action
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_Action
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  nameWithType: IAuditTrailEntry.Action
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action*
+  name: Action
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_Action_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  nameWithType: IAuditTrailEntry.Action
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  name: DateCreated
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_DateCreated
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  nameWithType: IAuditTrailEntry.DateCreated
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated*
+  name: DateCreated
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_DateCreated_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  nameWithType: IAuditTrailEntry.DateCreated
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  name: JsonBody
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_JsonBody
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  nameWithType: IAuditTrailEntry.JsonBody
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody*
+  name: JsonBody
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_JsonBody_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  nameWithType: IAuditTrailEntry.JsonBody
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  name: TableName
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_TableName
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  nameWithType: IAuditTrailEntry.TableName
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName*
+  name: TableName
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_TableName_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  nameWithType: IAuditTrailEntry.TableName
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  name: UserId
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_UserId
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  nameWithType: IAuditTrailEntry.UserId
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId*
+  name: UserId
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_UserId_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  nameWithType: IAuditTrailEntry.UserId
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2
+  name: SingletonJobBase<T, TDbContext>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-2.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2
+  name.vb: SingletonJobBase(Of T, TDbContext)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext)
+  nameWithType: SingletonJobBase<T, TDbContext>
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2.#ctor(`1)
+  name: SingletonJobBase(TDbContext)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_2__ctor__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2.#ctor(`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext>.SingletonJobBase(TDbContext)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext).SingletonJobBase(TDbContext)
+  nameWithType: SingletonJobBase<T, TDbContext>.SingletonJobBase(TDbContext)
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext).SingletonJobBase(TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2.#ctor*
+  name: SingletonJobBase
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_2__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext>.SingletonJobBase
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext).SingletonJobBase
+  nameWithType: SingletonJobBase<T, TDbContext>.SingletonJobBase
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext).SingletonJobBase
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3
+  name: SingletonJobBase<T, TDbContext, TParam>
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html
+  commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3
+  name.vb: SingletonJobBase(Of T, TDbContext, TParam)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam)
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.#ctor(`1)
+  name: SingletonJobBase(TDbContext)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3__ctor__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.#ctor(`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase(TDbContext)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).SingletonJobBase(TDbContext)
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase(TDbContext)
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).SingletonJobBase(TDbContext)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.#ctor*
+  name: SingletonJobBase
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.#ctor
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).SingletonJobBase
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).SingletonJobBase
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3._instance
+  name: _instance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3__instance
+  commentId: F:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3._instance
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>._instance
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam)._instance
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>._instance
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam)._instance
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose
+  name: Dispose()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Dispose
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Dispose()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Dispose()
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.Dispose()
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).Dispose()
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Dispose_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose(System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Dispose(System.Boolean)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Dispose(System.Boolean)
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.Dispose(Boolean)
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).Dispose(Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose*
+  name: Dispose
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Dispose_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Dispose
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Dispose
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.Dispose
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).Dispose
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Instance
+  name: Instance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Instance
+  commentId: P:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Instance
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Instance
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Instance
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.Instance
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).Instance
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Instance*
+  name: Instance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Instance_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Instance
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Instance
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Instance
+  nameWithType: SingletonJobBase<T, TDbContext, TParam>.Instance
+  nameWithType.vb: SingletonJobBase(Of T, TDbContext, TParam).Instance

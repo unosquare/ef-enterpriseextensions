@@ -1,6 +1,0 @@
-language: csharp
-solution: Unosquare.Labs.EntityFramework.EnterpriseExtensions.sln
-install:
-  - nuget restore Unosquare.Labs.EntityFramework.EnterpriseExtensions.sln
-script:
-  - xbuild /p:Configuration=Release Unosquare.Labs.EntityFramework.EnterpriseExtensions.sln
