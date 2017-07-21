@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Labs.EntityFramework.EnterpriseExtensions", "Unosquare.Labs.EntityFramework.EnterpriseExtensions\Unosquare.Labs.EntityFramework.EnterpriseExtensions.csproj", "{F8A52F6C-8DEB-4CDE-BAF2-E49A3B9AE7CB}"
 EndProject
@@ -14,6 +14,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions", "Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions\Unosquare.Labs.Identity.EntityFramework.EnterpriseExtensions.csproj", "{D2C1B6DF-6189-4989-A835-64EA6B64D27F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample", "Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample\Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.csproj", "{24AF5013-2E24-4A30-9E00-875B354ACC73}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D2C1B6DF-6189-4989-A835-64EA6B64D27F} = {D2C1B6DF-6189-4989-A835-64EA6B64D27F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

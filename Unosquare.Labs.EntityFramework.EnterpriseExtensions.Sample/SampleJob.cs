@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
@@ -12,13 +13,13 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
         {
         }
 
-        protected override void DoWork(object argument)
+        protected override async Task DoWork(object argument, CancellationToken ct)
         {
             var value = ++_counter;
 
             // Doing nothing yay!
             Console.WriteLine("SampleJob starting {0} job", value);
-            Thread.Sleep(TimeSpan.FromMinutes(1));
+            await Task.Delay(TimeSpan.FromMinutes(1), ct);
             Console.WriteLine("SampleJob ending {0} job", value);
         }
 
@@ -37,11 +38,11 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         }
 
-        protected override void DoWork(object argument)
+        protected override async Task DoWork(object argument, CancellationToken ct)
         {
             // Doing nothing yay!
             Console.WriteLine("SingletonSampleJob starting");
-            Thread.Sleep(TimeSpan.FromMinutes(5));
+            await Task.Delay(TimeSpan.FromMinutes(5), ct);
             Console.WriteLine("SingletonSampleJob ending");
         }
 

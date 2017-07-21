@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Effort;
@@ -53,7 +54,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class JobController : ActionCommandBase
         {
-            private SampleDb _context;
+            private readonly SampleDb _context;
             private static readonly List<SampleJob> Jobs = new List<SampleJob>();
 
             public JobController(SampleDb context)
@@ -70,7 +71,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 {
                     OutputInformation("Running non-static job");
                     var job = new SampleJob(_context);
-                    job.RunAsync(null);
+                    await job.RunAsync(null);
                     await Task.Delay(1000);
                     OutputInformation("Non-static Job Status: {0}", job.IsRunning);
                     Jobs.Add(job);
@@ -82,41 +83,41 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class ToggleController : ActionCommandBase
         {
-            private SampleDb _context;
-            private static TestController controller;
+            private readonly SampleDb _context;
+            private static TestController _controller;
 
             public ToggleController(SampleDb context)
                 : base("toggle", "Toggle test controller")
             {
                 _context = context;
 
-                if (controller == null)
-                    controller = new TestController(_context);
+                if (_controller == null)
+                    _controller = new TestController(_context);
             }
             
-            public override async Task<bool> InvokeAsync(string paramList)
+            public override Task<bool> InvokeAsync(string paramList)
             {
                 OutputInformation("Toggling controller");
                 OutputInformation("Test controller will change orders city to 'NYC'");
 
-                if (_context.ContainsController(controller))
+                if (_context.ContainsController(_controller))
                 {
                     OutputInformation("Controller is off");
-                    _context.RemoveController(controller);
+                    _context.RemoveController(_controller);
                 }
                 else
                 {
                     OutputInformation("Controller is on");
-                    _context.AddController(controller);
+                    _context.AddController(_controller);
                 }
 
-                return true;
+                return Task.FromResult(true);
             }
         }
 
         internal class QueryOrder : ActionCommandBase
         {
-            private SampleDb _context;
+            private readonly SampleDb _context;
 
             public QueryOrder(SampleDb context)
                 : base("order", "Check last Order")
@@ -128,7 +129,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
             {
                 OutputInformation("Last Order");
 
-                var lastitem = _context.Orders.OrderByDescending(x => x.OrderID).FirstOrDefault();
+                var lastitem = await _context.Orders.OrderByDescending(x => x.OrderID).FirstOrDefaultAsync();
 
                 if (lastitem != null)
                 {
@@ -144,7 +145,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class QueryAuditTrail : ActionCommandBase
         {
-            private SampleDb _context;
+            private readonly SampleDb _context;
 
             public QueryAuditTrail(SampleDb context)
                 : base("audit", "Check last AuditTrail entry")
@@ -156,7 +157,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
             {
                 OutputInformation("Last Audit Trail");
 
-                var lastitem = _context.AuditTrailEntrys.OrderByDescending(x => x.AuditId).FirstOrDefault();
+                var lastitem = await _context.AuditTrailEntrys.OrderByDescending(x => x.AuditId).FirstOrDefaultAsync();
 
                 if (lastitem != null)
                 {
@@ -172,7 +173,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class EditOrder : ActionCommandBase
         {
-            private SampleDb _context;
+            private readonly SampleDb _context;
 
             public EditOrder(SampleDb context)
                 : base("edit", "Edit last Order entry")
@@ -184,7 +185,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
             {
                 OutputInformation("Last Order");
 
-                var lastitem = _context.Orders.OrderByDescending(x => x.OrderID).FirstOrDefault();
+                var lastitem = await _context.Orders.OrderByDescending(x => x.OrderID).FirstOrDefaultAsync();
 
                 if (lastitem != null)
                 {
@@ -198,7 +199,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
         internal class FillOrderCommand : ActionCommandBase
         {
-            private SampleDb _context;
+            private readonly SampleDb _context;
 
             public FillOrderCommand(SampleDb context)
                 : base("fillorder", "Add some orders to database")
@@ -253,7 +254,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 
                 _context.Orders.Add(order);
 
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
 
                 OutputInformation("After save");
 
