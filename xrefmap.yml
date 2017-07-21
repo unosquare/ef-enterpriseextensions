@@ -673,14 +673,14 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Context
   nameWithType: JobBase<TDbContext, TParam>.Context
   nameWithType.vb: JobBase(Of TDbContext, TParam).Context
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1)
-  name: DoWork(TParam)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork(TParam)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork(TParam)
-  nameWithType: JobBase<TDbContext, TParam>.DoWork(TParam)
-  nameWithType.vb: JobBase(Of TDbContext, TParam).DoWork(TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,System.Threading.CancellationToken)
+  name: DoWork(TParam, CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_System_Threading_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,System.Threading.CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork(TParam, System.Threading.CancellationToken)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork(TParam, System.Threading.CancellationToken)
+  nameWithType: JobBase<TDbContext, TParam>.DoWork(TParam, CancellationToken)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).DoWork(TParam, CancellationToken)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork*
   name: DoWork
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork_
@@ -737,14 +737,14 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run
   nameWithType: JobBase<TDbContext, TParam>.Run
   nameWithType.vb: JobBase(Of TDbContext, TParam).Run
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1)
-  name: RunAsync(TParam)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync(TParam)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync(TParam)
-  nameWithType: JobBase<TDbContext, TParam>.RunAsync(TParam)
-  nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync(TParam)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)
+  name: RunAsync(TParam, CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_System_Threading_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync(TParam, System.Threading.CancellationToken)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync(TParam, System.Threading.CancellationToken)
+  nameWithType: JobBase<TDbContext, TParam>.RunAsync(TParam, CancellationToken)
+  nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync(TParam, CancellationToken)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync*
   name: RunAsync
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync_
