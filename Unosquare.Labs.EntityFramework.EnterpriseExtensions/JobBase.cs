@@ -46,8 +46,10 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <summary>
         /// The job work task
         /// </summary>
-        /// <param name="argument"></param>
-        protected abstract void DoWork(TParam argument);
+        /// <param name="argument">The argument.</param>
+        /// <param name="ct">The cancellation token.</param>
+        /// <returns></returns>
+        protected abstract Task DoWork(TParam argument, CancellationToken ct);
 
         /// <summary>
         /// Defines the condition to run job in background
@@ -72,7 +74,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
                         await Task.Delay(idleTime, ct);
                     }
 
-                    InternalRun(argument);
+                    await RunAsync(argument, ct);
                     await Task.Delay(idleTime, ct);
                 }
             }
@@ -87,7 +89,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="ct"></param>
         /// <param name="argument"></param>
-        public void RunBackgroundWork(CancellationToken ct, TParam argument = null)
+        public void RunBackgroundWork(CancellationToken ct = default(CancellationToken), TParam argument = null)
         {
             RunBackgroundWork(ct, TimeSpan.FromMinutes(1), argument);
         }
@@ -101,27 +103,18 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// The Job last execution End Date
         /// </summary>
         public DateTime? EndDate { get; set; }
-
-        /// <summary>
-        /// Runs the job in a thread if it isn't running
-        /// </summary>
-        /// <param name="argument"></param>
-        /// <returns></returns>
-        public Task RunAsync(TParam argument)
-        {
-            return IsRunning ? null : Task.Run(() => InternalRun(argument));
-        }
-
+        
         /// <summary>
         /// Runs the job if it isn't running
         /// </summary>
         /// <param name="argument"></param>
         /// <returns></returns>
+        [Obsolete("Use RunAsync")]
         public bool Run(TParam argument)
         {
             if (IsRunning) return false;
 
-            InternalRun(argument);
+            RunAsync(argument).Wait();
 
             return true;
         }
@@ -129,16 +122,20 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <summary>
         /// Executes the job, you shouldn't call this method directly
         /// </summary>
-        /// <param name="argument"></param>
-        private void InternalRun(TParam argument)
+        /// <param name="argument">The argument.</param>
+        /// <param name="ct">The cancellation token.</param>
+        /// <returns></returns>
+        public async Task RunAsync(TParam argument, CancellationToken ct = default(CancellationToken))
         {
+            if (IsRunning) return;
+
             EndDate = null;
             StartDate = DateTime.UtcNow;
             IsRunning = true;
 
             try
             {
-                DoWork(argument);
+                await DoWork(argument, ct);
             }
             finally
             {
