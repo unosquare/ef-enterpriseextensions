@@ -6,8 +6,8 @@
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     using System.Linq;
-    using Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel;
-    using Unosquare.Swan.Formatters;
+    using ObjectModel;
+    using Swan.Formatters;
 
     /// <summary>
     /// Represents an AuditTrail controller
@@ -73,6 +73,9 @@
         public virtual void OnEntityCreated(object entity)
         {
             var entityType = GetEntityType(entity);
+
+            // Ignore AuditTrail entity on creation
+            if (typeof(TEntity) == entityType) return;
 
             if (_validCreateTypes.Contains(entityType) == false && _validCreateTypes.Any()) return;
 
