@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class JobBase&lt;TDbContext, TParam&gt;
    | Entity Framework Enterprise Extensions ">
-    <meta name="generator" content="docfx 2.22.2.0">
+    <meta name="generator" content="docfx 2.25.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    
     <meta property="docfx:rel" content="../">
     
   </head>
@@ -87,9 +88,9 @@
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">JobBase&lt;TDbContext, TParam&gt;</span></div>
-  </div>
       <div class="level2"><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-1.html">JobBase&lt;TDbContext&gt;</a></div>
       <div class="level2"><a class="xref" href="Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html">SingletonJobBase&lt;T, TDbContext, TParam&gt;</a></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -420,7 +421,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RunAsync(TParam argument, CancellationToken ct = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task RunAsync(TParam argument, CancellationToken ct = default (CancellationToken))</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -470,7 +471,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RunBackgroundWork(CancellationToken ct = null, TParam argument = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RunBackgroundWork(CancellationToken ct = default (CancellationToken), TParam argument = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
