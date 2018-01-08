@@ -23,7 +23,7 @@ if you are using Identity Entity Framework.
 Usage
 ---
 
-First you need to change your `DbContext` or `IdentityDbContext` to `BusinessDbContext` or `IdentityBusinessDbContext` respectly and you can attach Business Controllers to your DbContext in the constructor. They will execute before anytime you call `SaveChanges` method. The controllers require to specified a `BusinessRuleAttribute` to
+First you need to change your `DbContext` or `IdentityDbContext` to `BusinessDbContext` or `IdentityBusinessDbContext` respectively and you can attach Business Controllers to your DbContext in the constructor. They will execute before any time you call `SaveChanges` method. The controllers require specified a `BusinessRuleAttribute` to
 identify what CRUD action and which Entity types will be processed.
 
 EF Enterprise Extensions includes a `JobBase` abstract class (with a singleton extension named `SingletonJobBase`), so you can build business jobs easily. Check the Sample app.
@@ -31,7 +31,7 @@ EF Enterprise Extensions includes a `JobBase` abstract class (with a singleton e
 Business Rules - Audit Trail
 ----------------------------
 
-Audit Trails is a task to save the changes to any operation perform in a record. In other words, capture what change between any data saving. This operation is important in many system and you can accomplish with these extensions easily. The `AuditTrailController` can be attached to your `BusinessDbContext`and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.
+Audit Trails is a task to save the changes to any operation performed in a record. In other words, capture what change between any data saving. This operation is important in many systems and you can accomplish with these extensions easily. The `AuditTrailController` can be attached to your `BusinessDbContext`and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.
 
 To start using the `AuditTrailController` you need to specify a table where the Audit Trail data will be, you should implement the `IAuditTrailEntry` interface in your entity, for example:
 
@@ -49,7 +49,7 @@ public class AuditTrailEntry : IAuditTrailEntry
     }
 ```
 
-Since you need to know who change the data, you need to construct your DataContext with the user relation. For example in Web API you can send the UserId from the request in the DataContext constructor. The `AuditTrailController` requires two parameters, the DbContext instance and a string to identify the user, and two type parameters, the DbContext type and the AudiTrailEntry type.  You can call the extension method `UseAuditTrail` to add the Business Controller to your Business DataContext.
+Since you need to know who change the data, you need to construct your DataContext with the user relation. For example, in Web API you can send the UserId from the request in the DataContext constructor. The `AuditTrailController` requires two parameters, the DbContext instance, and a string to identify the user, and two type parameters, the DbContext type and the AudiTrailEntry type.  You can call the extension method `UseAuditTrail` to add the Business Controller to your Business DataContext.
 
 ```csharp
 public class SampleDb : BusinessDbContext
@@ -71,14 +71,14 @@ public class SampleDb : BusinessDbContext
 
 ```
 
-By default, all the entities will be audited, you can access to the Audit Trail controller and set up the action-types relation with the method `AddTypes`. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.
+By default, all the entities will be audited, you can access the Audit Trail controller and set up the action-types relation with the method `AddTypes`. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.
 
 Jobs
 ----
 
-The *Jobs* are wrapper to your tasks. They can run in single instance (singletons with `SingletonJobBase`) or with multiple executions using `JobBase`. You can execute them in your ASP.NET applications (WebApi too) using the `HostingEnvironment.QueueBackgroundWorkItem` method in .NET 4.6 and setup your execution condition with a datetime or a flag.
+The *Jobs* is a wrapper for your tasks. They can run in a single instance (singletons with `SingletonJobBase`) or with multiple executions using `JobBase`. You can execute them in your ASP.NET applications (WebApi too) using the `HostingEnvironment.QueueBackgroundWorkItem` method in .NET 4.6 and set up your execution condition with a DateTime or a flag.
 
-To begin using this Jobs, you need to create a class and inherent from SingletonJobBase or JobBase and fill the implementation methods. The jobs exposes three executions modes:
+To begin using this Jobs, you need to create a class and inherit from SingletonJobBase or JobBase and fill the implementation methods. The jobs expose three executions modes:
 
 * **Run** - The simple non-async way to execute the task. You can provide your own ThreadPool or mechanism to execute them. Returns true if the task was executed.
 * **RunAsync** - An awaitable method to run your task.
