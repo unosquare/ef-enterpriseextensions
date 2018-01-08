@@ -8,7 +8,7 @@
     <title>ef-enterpriseextensions | Entity Framework Enterprise Extensions </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="ef-enterpriseextensions | Entity Framework Enterprise Extensions ">
-    <meta name="generator" content="docfx 2.27.0.0">
+    <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -81,11 +81,11 @@
 <pre><code>PM&gt; Install-Package Unosquare.Identity.EntityFramework.EnterpriseExtensions
 </code></pre><p>if you are using Identity Entity Framework.</p>
 <h2 id="usage">Usage</h2>
-<p>First you need to change your <code>DbContext</code> or <code>IdentityDbContext</code> to <code>BusinessDbContext</code> or <code>IdentityBusinessDbContext</code> respectly and you can attach Business Controllers to your DbContext in the constructor. They will execute before anytime you call <code>SaveChanges</code> method. The controllers require to specified a <code>BusinessRuleAttribute</code> to
+<p>First you need to change your <code>DbContext</code> or <code>IdentityDbContext</code> to <code>BusinessDbContext</code> or <code>IdentityBusinessDbContext</code> respectively and you can attach Business Controllers to your DbContext in the constructor. They will execute before any time you call <code>SaveChanges</code> method. The controllers require specified a <code>BusinessRuleAttribute</code> to
 identify what CRUD action and which Entity types will be processed.</p>
 <p>EF Enterprise Extensions includes a <code>JobBase</code> abstract class (with a singleton extension named <code>SingletonJobBase</code>), so you can build business jobs easily. Check the Sample app.</p>
 <h2 id="business-rules---audit-trail">Business Rules - Audit Trail</h2>
-<p>Audit Trails is a task to save the changes to any operation perform in a record. In other words, capture what change between any data saving. This operation is important in many system and you can accomplish with these extensions easily. The <code>AuditTrailController</code> can be attached to your <code>BusinessDbContext</code>and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.</p>
+<p>Audit Trails is a task to save the changes to any operation performed in a record. In other words, capture what change between any data saving. This operation is important in many systems and you can accomplish with these extensions easily. The <code>AuditTrailController</code> can be attached to your <code>BusinessDbContext</code>and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.</p>
 <p>To start using the <code>AuditTrailController</code> you need to specify a table where the Audit Trail data will be, you should implement the <code>IAuditTrailEntry</code> interface in your entity, for example:</p>
 <pre><code class="lang-csharp">public class AuditTrailEntry : IAuditTrailEntry
     {
@@ -98,7 +98,7 @@ identify what CRUD action and which Entity types will be processed.</p>
         public string JsonBody { get; set; }
         public DateTime DateCreated { get; set; }
     }
-</code></pre><p>Since you need to know who change the data, you need to construct your DataContext with the user relation. For example in Web API you can send the UserId from the request in the DataContext constructor. The <code>AuditTrailController</code> requires two parameters, the DbContext instance and a string to identify the user, and two type parameters, the DbContext type and the AudiTrailEntry type.  You can call the extension method <code>UseAuditTrail</code> to add the Business Controller to your Business DataContext.</p>
+</code></pre><p>Since you need to know who change the data, you need to construct your DataContext with the user relation. For example, in Web API you can send the UserId from the request in the DataContext constructor. The <code>AuditTrailController</code> requires two parameters, the DbContext instance, and a string to identify the user, and two type parameters, the DbContext type and the AudiTrailEntry type.  You can call the extension method <code>UseAuditTrail</code> to add the Business Controller to your Business DataContext.</p>
 <pre><code class="lang-csharp">public class SampleDb : BusinessDbContext
     {
         public string UserId { get; set; }
@@ -115,10 +115,10 @@ identify what CRUD action and which Entity types will be processed.</p>
         public DbSet&lt;OrderDetail&gt; OrderDetails { get; set; }
         public DbSet&lt;Product&gt; Products { get; set; }
     }
-</code></pre><p>By default, all the entities will be audited, you can access to the Audit Trail controller and set up the action-types relation with the method <code>AddTypes</code>. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.</p>
+</code></pre><p>By default, all the entities will be audited, you can access the Audit Trail controller and set up the action-types relation with the method <code>AddTypes</code>. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.</p>
 <h2 id="jobs">Jobs</h2>
-<p>The <em>Jobs</em> are wrapper to your tasks. They can run in single instance (singletons with <code>SingletonJobBase</code>) or with multiple executions using <code>JobBase</code>. You can execute them in your ASP.NET applications (WebApi too) using the <code>HostingEnvironment.QueueBackgroundWorkItem</code> method in .NET 4.6 and setup your execution condition with a datetime or a flag.</p>
-<p>To begin using this Jobs, you need to create a class and inherent from SingletonJobBase or JobBase and fill the implementation methods. The jobs exposes three executions modes:</p>
+<p>The <em>Jobs</em> is a wrapper for your tasks. They can run in a single instance (singletons with <code>SingletonJobBase</code>) or with multiple executions using <code>JobBase</code>. You can execute them in your ASP.NET applications (WebApi too) using the <code>HostingEnvironment.QueueBackgroundWorkItem</code> method in .NET 4.6 and set up your execution condition with a DateTime or a flag.</p>
+<p>To begin using this Jobs, you need to create a class and inherit from SingletonJobBase or JobBase and fill the implementation methods. The jobs expose three executions modes:</p>
 <ul>
 <li><strong>Run</strong> - The simple non-async way to execute the task. You can provide your own ThreadPool or mechanism to execute them. Returns true if the task was executed.</li>
 <li><strong>RunAsync</strong> - An awaitable method to run your task.</li>
