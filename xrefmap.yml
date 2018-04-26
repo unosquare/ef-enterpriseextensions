@@ -65,6 +65,7 @@ references:
   name: BusinessDbContext
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext
   nameWithType: BusinessDbContext.BusinessDbContext
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
@@ -77,6 +78,7 @@ references:
   name: AddController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_AddController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.AddController
   nameWithType: BusinessDbContext.AddController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
@@ -89,6 +91,7 @@ references:
   name: ContainsController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_ContainsController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController
   nameWithType: BusinessDbContext.ContainsController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
@@ -101,6 +104,7 @@ references:
   name: RemoveController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController
   nameWithType: BusinessDbContext.RemoveController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
@@ -113,6 +117,7 @@ references:
   name: SaveChanges
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
   nameWithType: BusinessDbContext.SaveChanges
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
@@ -131,6 +136,7 @@ references:
   name: SaveChangesAsync
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
   nameWithType: BusinessDbContext.SaveChangesAsync
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
@@ -164,6 +170,7 @@ references:
   name: BusinessRuleAttribute
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute
   nameWithType: BusinessRuleAttribute.BusinessRuleAttribute
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
@@ -176,6 +183,7 @@ references:
   name: Action
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_Action_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.Action
   nameWithType: BusinessRuleAttribute.Action
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
@@ -188,6 +196,7 @@ references:
   name: EntityTypes
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute_EntityTypes_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.EntityTypes
   nameWithType: BusinessRuleAttribute.EntityTypes
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1
@@ -211,6 +220,7 @@ references:
   name: BusinessRulesController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.BusinessRulesController
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).BusinessRulesController
   nameWithType: BusinessRulesController<T>.BusinessRulesController
@@ -227,6 +237,7 @@ references:
   name: Context
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_Context_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.Context
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.Context
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).Context
   nameWithType: BusinessRulesController<T>.Context
@@ -243,6 +254,7 @@ references:
   name: GetEntityType
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_GetEntityType_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.GetEntityType
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.GetEntityType
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).GetEntityType
   nameWithType: BusinessRulesController<T>.GetEntityType
@@ -259,6 +271,7 @@ references:
   name: RunBusinessRules
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRulesController_1_RunBusinessRules_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController`1.RunBusinessRules
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController<T>.RunBusinessRules
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRulesController(Of T).RunBusinessRules
   nameWithType: BusinessRulesController<T>.RunBusinessRules
@@ -290,6 +303,7 @@ references:
   name: AuditTrailController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AuditTrailController
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AuditTrailController
   nameWithType: AuditTrailController<T, TEntity>.AuditTrailController
@@ -315,6 +329,7 @@ references:
   name: AddTypes
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_AddTypes_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.AddTypes
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.AddTypes
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).AddTypes
   nameWithType: AuditTrailController<T, TEntity>.AddTypes
@@ -331,6 +346,7 @@ references:
   name: OnEntityCreated
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityCreated_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityCreated
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityCreated
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityCreated
   nameWithType: AuditTrailController<T, TEntity>.OnEntityCreated
@@ -347,6 +363,7 @@ references:
   name: OnEntityDeleted
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityDeleted_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityDeleted
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityDeleted
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityDeleted
   nameWithType: AuditTrailController<T, TEntity>.OnEntityDeleted
@@ -363,6 +380,7 @@ references:
   name: OnEntityUpdated
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_AuditTrailController_2_OnEntityUpdated_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController`2.OnEntityUpdated
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController<T, TEntity>.OnEntityUpdated
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.AuditTrailController(Of T, TEntity).OnEntityUpdated
   nameWithType: AuditTrailController<T, TEntity>.OnEntityUpdated
@@ -377,6 +395,7 @@ references:
   name: UseAuditTrail
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_Controllers_FluentAuditTrailExtension_UseAuditTrail_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail
   nameWithType: FluentAuditTrailExtension.UseAuditTrail
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.Controllers.FluentAuditTrailExtension.UseAuditTrail``2(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext,System.String)
@@ -404,6 +423,7 @@ references:
   name: AddController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_AddController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.AddController
   nameWithType: IBusinessDbContext.AddController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
@@ -416,6 +436,7 @@ references:
   name: ContainsController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_ContainsController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController
   nameWithType: IBusinessDbContext.ContainsController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
@@ -428,6 +449,7 @@ references:
   name: RemoveController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_RemoveController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController
   nameWithType: IBusinessDbContext.RemoveController
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController
@@ -446,6 +468,7 @@ references:
   name: RunBusinessRules
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_RunBusinessRules_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController.RunBusinessRules
   nameWithType: IBusinessRulesController.RunBusinessRules
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
@@ -499,6 +522,7 @@ references:
   name: IdentityBusinessDbContext
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext
   nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext
@@ -515,6 +539,7 @@ references:
   name: AddController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_AddController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.AddController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.AddController
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).AddController
   nameWithType: IdentityBusinessDbContext<TUser>.AddController
@@ -531,6 +556,7 @@ references:
   name: ContainsController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_ContainsController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.ContainsController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.ContainsController
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).ContainsController
   nameWithType: IdentityBusinessDbContext<TUser>.ContainsController
@@ -547,6 +573,7 @@ references:
   name: RemoveController
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_RemoveController_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.RemoveController
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).RemoveController
   nameWithType: IdentityBusinessDbContext<TUser>.RemoveController
@@ -563,6 +590,7 @@ references:
   name: SaveChanges
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChanges_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChanges
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChanges
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChanges
   nameWithType: IdentityBusinessDbContext<TUser>.SaveChanges
@@ -587,6 +615,7 @@ references:
   name: SaveChangesAsync
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_SaveChangesAsync_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.SaveChangesAsync
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.SaveChangesAsync
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).SaveChangesAsync
   nameWithType: IdentityBusinessDbContext<TUser>.SaveChangesAsync
@@ -612,6 +641,7 @@ references:
   name: JobBase
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_1__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`1.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext>.JobBase
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext).JobBase
   nameWithType: JobBase<TDbContext>.JobBase
@@ -645,6 +675,7 @@ references:
   name: JobBase
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.JobBase
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).JobBase
   nameWithType: JobBase<TDbContext, TParam>.JobBase
@@ -661,6 +692,7 @@ references:
   name: BackgroundCondition
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_BackgroundCondition_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.BackgroundCondition
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.BackgroundCondition
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).BackgroundCondition
   nameWithType: JobBase<TDbContext, TParam>.BackgroundCondition
@@ -685,6 +717,7 @@ references:
   name: DoWork
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork
   nameWithType: JobBase<TDbContext, TParam>.DoWork
@@ -701,6 +734,7 @@ references:
   name: EndDate
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_EndDate_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.EndDate
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.EndDate
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).EndDate
   nameWithType: JobBase<TDbContext, TParam>.EndDate
@@ -717,6 +751,7 @@ references:
   name: IsRunning
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_IsRunning_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.IsRunning
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.IsRunning
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).IsRunning
   nameWithType: JobBase<TDbContext, TParam>.IsRunning
@@ -733,6 +768,7 @@ references:
   name: Run
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Run_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Run
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run
   nameWithType: JobBase<TDbContext, TParam>.Run
@@ -749,6 +785,7 @@ references:
   name: RunAsync
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync
   nameWithType: JobBase<TDbContext, TParam>.RunAsync
@@ -773,6 +810,7 @@ references:
   name: RunBackgroundWork
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork
   nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork
@@ -789,6 +827,7 @@ references:
   name: StartDate
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_StartDate_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.StartDate
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.StartDate
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).StartDate
   nameWithType: JobBase<TDbContext, TParam>.StartDate
@@ -815,6 +854,7 @@ references:
   name: Action
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_Action_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.Action
   nameWithType: IAuditTrailEntry.Action
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
@@ -827,6 +867,7 @@ references:
   name: DateCreated
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_DateCreated_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.DateCreated
   nameWithType: IAuditTrailEntry.DateCreated
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
@@ -839,6 +880,7 @@ references:
   name: JsonBody
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_JsonBody_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.JsonBody
   nameWithType: IAuditTrailEntry.JsonBody
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
@@ -851,6 +893,7 @@ references:
   name: TableName
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_TableName_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.TableName
   nameWithType: IAuditTrailEntry.TableName
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
@@ -863,6 +906,7 @@ references:
   name: UserId
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_ObjectModel_IAuditTrailEntry_UserId_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.ObjectModel.IAuditTrailEntry.UserId
   nameWithType: IAuditTrailEntry.UserId
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2
@@ -886,6 +930,7 @@ references:
   name: SingletonJobBase
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_2__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`2.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext>.SingletonJobBase
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext).SingletonJobBase
   nameWithType: SingletonJobBase<T, TDbContext>.SingletonJobBase
@@ -911,6 +956,7 @@ references:
   name: SingletonJobBase
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3__ctor_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.#ctor
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).SingletonJobBase
   nameWithType: SingletonJobBase<T, TDbContext, TParam>.SingletonJobBase
@@ -943,6 +989,7 @@ references:
   name: Dispose
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Dispose_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Dispose
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Dispose
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Dispose
   nameWithType: SingletonJobBase<T, TDbContext, TParam>.Dispose
@@ -959,6 +1006,7 @@ references:
   name: Instance
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase-3.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_SingletonJobBase_3_Instance_
   commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase`3.Instance
+  isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase<T, TDbContext, TParam>.Instance
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.SingletonJobBase(Of T, TDbContext, TParam).Instance
   nameWithType: SingletonJobBase<T, TDbContext, TParam>.Instance
