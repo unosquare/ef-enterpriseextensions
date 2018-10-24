@@ -1,11 +1,11 @@
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Identity.EntityFramework;
-
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    using System.Collections.Generic;
+    using System.Data.Common;
+    using System.Threading;
+    using System.Threading.Tasks;
+    using Microsoft.AspNet.Identity.EntityFramework;
+
     /// <summary>
     /// Creates a new IdentityDbContext with support to run BusinessControllers
     /// </summary>
@@ -17,7 +17,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <summary>
         /// Instances a new DbContext with a connection name
         /// </summary>
-        protected IdentityBusinessDbContext(string connectionName) : base(connectionName)
+        protected IdentityBusinessDbContext(string connectionName)
+            : base(connectionName)
         {
         }
 
@@ -39,29 +40,16 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         {
         }
 
-        /// <summary>
-        /// Adds a new BusinessController to the DbContext
-        /// </summary>
-        /// <param name="controller"></param>
+        /// <inheritdoc />
         public void AddController(IBusinessRulesController controller)
         {
             _businessControllers.Add(controller);
         }
 
-        /// <summary>
-        /// Removes a new BusinessController to the DbContext
-        /// </summary>
-        /// <param name="controller"></param>
-        public void RemoveController(IBusinessRulesController controller)
-        {
-            _businessControllers.Remove(controller);
-        }
+        /// <inheritdoc />
+        public void RemoveController(IBusinessRulesController controller) => _businessControllers.Remove(controller);
 
-        /// <summary>
-        /// Checks if a BusinessController exists
-        /// </summary>
-        /// <param name="controller"></param>
-        /// <returns></returns>
+        /// <inheritdoc />
         public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
 
         private void RunBusinessRules()
@@ -108,5 +96,33 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     /// </summary>
     public abstract class IdentityBusinessDbContext : IdentityBusinessDbContext<IdentityUser>
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="IdentityBusinessDbContext"/> class.
+        /// </summary>
+        /// <param name="connectionName"></param>
+        protected IdentityBusinessDbContext(string connectionName)
+            : base(connectionName)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="IdentityBusinessDbContext"/> class.
+        /// </summary>
+        /// <param name="connectionName"></param>
+        /// <param name="throwIfV1Schema"></param>
+        protected IdentityBusinessDbContext(string connectionName, bool throwIfV1Schema)
+            : base(connectionName, throwIfV1Schema)
+        {
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="IdentityBusinessDbContext"/> class.
+        /// </summary>
+        /// <param name="dbConnection"></param>
+        /// <param name="contextOwnsConnection"></param>
+        protected IdentityBusinessDbContext(DbConnection dbConnection, bool contextOwnsConnection)
+            : base(dbConnection, contextOwnsConnection)
+        {
+        }
     }
 }

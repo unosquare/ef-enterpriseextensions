@@ -94,7 +94,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 if (_controller == null)
                     _controller = new TestController(_context);
             }
-            
+
             public override Task<bool> InvokeAsync(string paramList)
             {
                 OutputInformation("Toggling controller");
@@ -157,7 +157,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
             {
                 OutputInformation("Last Audit Trail");
 
-                var lastitem = await _context.AuditTrailEntrys.OrderByDescending(x => x.AuditId).FirstOrDefaultAsync();
+                var lastitem = await _context.AuditTrailEntries.OrderByDescending(x => x.AuditId).FirstOrDefaultAsync();
 
                 if (lastitem != null)
                 {
@@ -222,7 +222,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                 };
 
                 var rand = new Random();
-                var products = _context.Products.ToArray();
 
                 var order = new Order
                 {
@@ -233,19 +232,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
                     OrderType = rand.Next(30),
                     Amount = 10
                 };
-
-                //for (var k = 0; k < rand.Next(10); k++)
-                //{
-                //    order.Details.Add(new OrderDetail
-                //    {
-                //        Price = rand.Next(10),
-                //        Description = "Product ID" + rand.Next(1000),
-                //        Quantity = rand.Next(10),
-                //        ProductID = products[rand.Next(products.Length - 1)].ProductID
-                //    });
-                //}
-
-                // order.Amount = order.Details.Sum(x => x.Price*x.Quantity);
 
                 OutputInformation("OrderID {0}", order.OrderID);
                 OutputInformation("OrderType {0}", order.OrderType);

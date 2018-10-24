@@ -7,7 +7,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 {
     public class SampleJob : JobBase<SampleDb>
     {
-        private static int _counter = 0;
+        private static int _counter;
 
         public SampleJob(SampleDb context) : base(context)
         {
@@ -23,10 +23,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
             Console.WriteLine("SampleJob ending {0} job", value);
         }
 
-        protected override bool BackgroundCondition()
-        {
-            return DateTime.Now.Minute%2 == 0;
-        }
+        protected override bool BackgroundCondition() => DateTime.Now.Minute%2 == 0;
     }
 
     public class SingletonSampleJob : SingletonJobBase<SingletonSampleJob, SampleDb>
