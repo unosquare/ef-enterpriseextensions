@@ -43,12 +43,6 @@ references:
   commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext
   nameWithType: BusinessDbContext
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
-  name: BusinessDbContext()
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.BusinessDbContext()
-  nameWithType: BusinessDbContext.BusinessDbContext()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.#ctor(DbConnection,System.Boolean)
   name: BusinessDbContext(DbConnection, Boolean)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext__ctor_DbConnection_System_Boolean_
@@ -145,19 +139,19 @@ references:
   commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute
   nameWithType: BusinessRuleAttribute
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(System.Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
   name: BusinessRuleAttribute(Type, ActionFlags)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_Type_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type, Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_System_Type_Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(System.Type,Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(System.Type, Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
   nameWithType: BusinessRuleAttribute.BusinessRuleAttribute(Type, ActionFlags)
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(System.Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
   name: BusinessRuleAttribute(Type[], ActionFlags)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_Type___Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessRuleAttribute__ctor_System_Type___Unosquare_Labs_EntityFramework_EnterpriseExtensions_ActionFlags_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(System.Type[],Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
   name.vb: BusinessRuleAttribute(Type(), ActionFlags)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type[], Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(Type(), Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(System.Type[], Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.BusinessRuleAttribute(System.Type(), Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
   nameWithType: BusinessRuleAttribute.BusinessRuleAttribute(Type[], ActionFlags)
   nameWithType.vb: BusinessRuleAttribute.BusinessRuleAttribute(Type(), ActionFlags)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessRuleAttribute.#ctor(Unosquare.Labs.EntityFramework.EnterpriseExtensions.ActionFlags)
@@ -477,6 +471,31 @@ references:
   commentId: T:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext
   nameWithType: IdentityBusinessDbContext
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(DbConnection,System.Boolean)
+  name: IdentityBusinessDbContext(DbConnection, Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext__ctor_DbConnection_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(DbConnection,System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.IdentityBusinessDbContext(DbConnection, System.Boolean)
+  nameWithType: IdentityBusinessDbContext.IdentityBusinessDbContext(DbConnection, Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(System.String)
+  name: IdentityBusinessDbContext(String)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext__ctor_System_String_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(System.String)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.IdentityBusinessDbContext(System.String)
+  nameWithType: IdentityBusinessDbContext.IdentityBusinessDbContext(String)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(System.String,System.Boolean)
+  name: IdentityBusinessDbContext(String, Boolean)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext__ctor_System_String_System_Boolean_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor(System.String,System.Boolean)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.IdentityBusinessDbContext(System.String, System.Boolean)
+  nameWithType: IdentityBusinessDbContext.IdentityBusinessDbContext(String, Boolean)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor*
+  name: IdentityBusinessDbContext
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext__ctor_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.#ctor
+  isSpec: "True"
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext.IdentityBusinessDbContext
+  nameWithType: IdentityBusinessDbContext.IdentityBusinessDbContext
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1
   name: IdentityBusinessDbContext<TUser>
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html
@@ -486,14 +505,6 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser)
   nameWithType: IdentityBusinessDbContext<TUser>
   nameWithType.vb: IdentityBusinessDbContext(Of TUser)
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
-  name: IdentityBusinessDbContext()
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext()
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext()
-  nameWithType: IdentityBusinessDbContext<TUser>.IdentityBusinessDbContext()
-  nameWithType.vb: IdentityBusinessDbContext(Of TUser).IdentityBusinessDbContext()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.#ctor(DbConnection,System.Boolean)
   name: IdentityBusinessDbContext(DbConnection, Boolean)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1__ctor_DbConnection_System_Boolean_
@@ -756,23 +767,6 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).IsRunning
   nameWithType: JobBase<TDbContext, TParam>.IsRunning
   nameWithType.vb: JobBase(Of TDbContext, TParam).IsRunning
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run(`1)
-  name: Run(TParam)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Run__1_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run(`1)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Run(TParam)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run(TParam)
-  nameWithType: JobBase<TDbContext, TParam>.Run(TParam)
-  nameWithType.vb: JobBase(Of TDbContext, TParam).Run(TParam)
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run*
-  name: Run
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_Run_
-  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.Run
-  isSpec: "True"
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.Run
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Run
-  nameWithType: JobBase<TDbContext, TParam>.Run
-  nameWithType.vb: JobBase(Of TDbContext, TParam).Run
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)
   name: RunAsync(TParam, CancellationToken)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_System_Threading_CancellationToken_
