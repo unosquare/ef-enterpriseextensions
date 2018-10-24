@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Data.Common;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,13 +13,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         where TUser : IdentityUser
     {
         private readonly List<IBusinessRulesController> _businessControllers = new List<IBusinessRulesController>();
-
-        /// <summary>
-        /// Instances a new DbContext
-        /// </summary>
-        protected IdentityBusinessDbContext() : base()
-        {
-        }
 
         /// <summary>
         /// Instances a new DbContext with a connection name
@@ -69,10 +62,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="controller"></param>
         /// <returns></returns>
-        public bool ContainsController(IBusinessRulesController controller)
-        {
-            return _businessControllers.Contains(controller);
-        }
+        public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
 
         private void RunBusinessRules()
         {
