@@ -68,9 +68,7 @@
             Context = context;
         }
 
-        /// <summary>
-        /// Handles the SavingChanges event of the context object.
-        /// </summary>
+        /// <inheritdoc />
         public void RunBusinessRules()
         {
             var methodInfoSet = GetType().GetMethods().Where(m => m.ReturnType == typeof (void) && m.IsPublic
@@ -91,10 +89,10 @@
         public Type GetEntityType(object entity)
         {
             var entityType = entity.GetType();
-            if (entityType.BaseType != null && entityType.Namespace == DynamicProxiesNamespace)
-                entityType = entityType.BaseType;
 
-            return entityType;
+            return entityType.BaseType != null && entityType.Namespace == DynamicProxiesNamespace
+                ? entityType.BaseType
+                : entityType;
         }
 
         /// <summary>
@@ -105,7 +103,8 @@
         /// <param name="methodInfoSet">The method info set.</param>
         private void ExecuteBusinessRulesMethods(EntityState state, ActionFlags action, MethodInfo[] methodInfoSet)
         {
-            var selfTrackingEntries = Context.ChangeTracker.Entries().Where(x => x.State == state);
+            var selfTrackingEntries = Context.ChangeTracker.Entries()
+                .Where(x => x.State == state);
 
             foreach (var entry in selfTrackingEntries)
             {
@@ -118,6 +117,7 @@
 
                 var methods = methodInfoSet.Where(m => m.GetCustomAttributes(typeof (BusinessRuleAttribute), true)
                     .Select(a => a as BusinessRuleAttribute)
+                    .Where(a => a != null)
                     .Any(
                         b => (b.EntityTypes == null ||
                               b.EntityTypes.Any(

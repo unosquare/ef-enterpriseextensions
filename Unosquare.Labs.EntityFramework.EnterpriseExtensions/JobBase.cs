@@ -105,21 +105,6 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         public DateTime? EndDate { get; set; }
         
         /// <summary>
-        /// Runs the job if it isn't running
-        /// </summary>
-        /// <param name="argument"></param>
-        /// <returns></returns>
-        [Obsolete("Use RunAsync")]
-        public bool Run(TParam argument)
-        {
-            if (IsRunning) return false;
-
-            RunAsync(argument).Wait();
-
-            return true;
-        }
-
-        /// <summary>
         /// Executes the job, you shouldn't call this method directly
         /// </summary>
         /// <param name="argument">The argument.</param>

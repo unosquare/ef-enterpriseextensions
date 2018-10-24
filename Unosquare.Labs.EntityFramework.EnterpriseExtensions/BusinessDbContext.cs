@@ -6,20 +6,13 @@ using System.Threading.Tasks;
 
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    /// <inheritdoc cref="DbContext" />
     /// <summary>
     /// Creates a new DbContext with support to run BusinessControllers
     /// </summary>
     public abstract class BusinessDbContext : DbContext, IBusinessDbContext
     {
         private readonly List<IBusinessRulesController> _businessControllers = new List<IBusinessRulesController>();
-
-        /// <summary>
-        /// Instances a new DbContext
-        /// </summary>
-        protected BusinessDbContext() : base()
-        {
-
-        }
 
         /// <summary>
         /// Instances a new DbContext with a connection name
@@ -61,10 +54,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="controller"></param>
         /// <returns></returns>
-        public bool ContainsController(IBusinessRulesController controller)
-        {
-            return _businessControllers.Contains(controller);
-        }
+        public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
 
         private void RunBusinessRules()
         {

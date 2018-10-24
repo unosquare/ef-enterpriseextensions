@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    using System;
+
     /// <summary>
     /// Defines a combination of actions in a CRUD pattern
     /// </summary>
@@ -34,6 +34,36 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
     public class BusinessRuleAttribute : Attribute
     {
         /// <summary>
+        /// Specifies the types and actions that a method handles as a business rule
+        /// </summary>
+        /// <param name="actionFlags">The action flags the method can handle.</param>
+        public BusinessRuleAttribute(ActionFlags actionFlags)
+        {
+            Action = actionFlags;
+        }
+
+        /// <summary>
+        /// Specifies the types and actions that a method handles as a business rule
+        /// </summary>
+        /// <param name="entityTypes">The entity types the method can handle.</param>
+        /// <param name="actionFlags">The action flags the method can handle.</param>
+        public BusinessRuleAttribute(Type[] entityTypes, ActionFlags actionFlags)
+        {
+            EntityTypes = entityTypes;
+            Action = actionFlags;
+        }
+
+        /// <summary>
+        /// Specifies the types and actions that a method handles as a business rule
+        /// </summary>
+        /// <param name="entityType">Type of the entity.</param>
+        /// <param name="actionFlags">The action flags the method can handle..</param>
+        public BusinessRuleAttribute(Type entityType, ActionFlags actionFlags)
+            : this(new[] { entityType }, actionFlags)
+        {
+        }
+        
+        /// <summary>
         /// Gets or sets the entity types the decorated method handles.
         /// </summary>
         /// <value>
@@ -49,34 +79,5 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </value>
         public ActionFlags Action { get; protected set; }
 
-        /// <summary>
-        /// Specifies the types and actions that a method handles as a business rule
-        /// </summary>
-        /// <param name="actionFlags">The action flags the method can handle.</param>
-        public BusinessRuleAttribute(ActionFlags actionFlags)
-        {
-            this.Action = actionFlags;
-        }
-
-        /// <summary>
-        /// Specifies the types and actions that a method handles as a business rule
-        /// </summary>
-        /// <param name="entityTypes">The entity types the method can handle.</param>
-        /// <param name="actionFlags">The action flags the method can handle.</param>
-        public BusinessRuleAttribute(Type[] entityTypes, ActionFlags actionFlags)
-        {
-            this.EntityTypes = entityTypes;
-            this.Action = actionFlags;
-        }
-
-        /// <summary>
-        /// Specifies the types and actions that a method handles as a business rule
-        /// </summary>
-        /// <param name="entityType">Type of the entity.</param>
-        /// <param name="actionFlags">The action flags the method can handle..</param>
-        public BusinessRuleAttribute(Type entityType, ActionFlags actionFlags)
-            : this(new[] { entityType }, actionFlags)
-        {
-        }
     }
 }

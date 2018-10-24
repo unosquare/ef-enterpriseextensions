@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    using System;
+
     /// <summary>
     /// 
     /// </summary>
@@ -24,9 +24,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         {
         }
 
-        /// <summary>
-        /// Disposes the job
-        /// </summary>
+        /// <inheritdoc />
         public void Dispose()
         {
             Dispose(true);
@@ -39,13 +37,12 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// <param name="disposeManaged"></param>
         protected virtual void Dispose(bool disposeManaged)
         {
-            if (disposeManaged)
+            if (!disposeManaged) return;
+
+            // free managed resources
+            if (_instance != null)
             {
-                // free managed resources
-                if (_instance != null)
-                {
-                    _instance = null;
-                }
+                _instance = null;
             }
         }
 
@@ -58,8 +55,8 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </value>
         public static T Instance
         {
-            get { return _instance ?? (_instance = Activator.CreateInstance(typeof (T), true) as T); }
-            protected set { _instance = value; }
+            get => _instance ?? (_instance = Activator.CreateInstance(typeof (T), true) as T);
+            protected set => _instance = value;
         }
     }
 
