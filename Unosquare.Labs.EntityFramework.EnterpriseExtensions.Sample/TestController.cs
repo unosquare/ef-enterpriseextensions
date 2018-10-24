@@ -1,16 +1,18 @@
-﻿using Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample.Database;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions.Sample
 {
-    class TestController : BusinessRulesController<SampleDb>
+    using System.Threading.Tasks;
+    using Database;
+
+    internal class TestController : BusinessRulesController<SampleDb>
     {
         public TestController(SampleDb context) : base(context)
         {
         }
 
         [BusinessRule(typeof (Order), ActionFlags.Create)]
-        public void ChangeOrderCity(Order order)
+        public async Task ChangeOrderCity(Order order)
         {
+            await Task.Delay(1);
             // Change the city to NYC always
             order.ShipperCity = "NYC";
         }

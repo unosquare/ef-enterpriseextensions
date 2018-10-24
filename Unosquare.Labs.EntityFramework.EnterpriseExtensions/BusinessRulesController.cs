@@ -4,6 +4,7 @@
     using System.Data.Entity;
     using System.Linq;
     using System.Reflection;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Represents a Business Rules Controller
@@ -49,7 +50,9 @@
     public abstract class BusinessRulesController<T> : IBusinessRulesController
         where T : DbContext
     {
-        const string DynamicProxiesNamespace = "System.Data.Entity.DynamicProxies";
+        private const string DynamicProxiesNamespace = "System.Data.Entity.DynamicProxies";
+        private readonly MethodInfo[] _methodInfoSet;
+
 
         /// <summary>
         /// Gets or sets the context.
@@ -65,20 +68,22 @@
         /// <param name="context">The context.</param>
         protected BusinessRulesController(T context)
         {
-            Context = context;
+            Context = context ?? throw new ArgumentNullException(nameof(context));
+
+            _methodInfoSet = GetType().GetMethods()
+                .Where(m => (m.ReturnType == typeof(void) || m.ReturnType == typeof(Task)) &&
+                            m.IsPublic &&
+                            !m.IsConstructor &&
+                            m.GetCustomAttributes(typeof(BusinessRuleAttribute),
+                                true).Any()).ToArray();
         }
 
         /// <inheritdoc />
         public void RunBusinessRules()
         {
-            var methodInfoSet = GetType().GetMethods().Where(m => m.ReturnType == typeof (void) && m.IsPublic
-                                                                  && !m.IsConstructor &&
-                                                                  m.GetCustomAttributes(typeof (BusinessRuleAttribute),
-                                                                      true).Any()).ToArray();
-
-            ExecuteBusinessRulesMethods(EntityState.Added, ActionFlags.Create, methodInfoSet);
-            ExecuteBusinessRulesMethods(EntityState.Modified, ActionFlags.Update, methodInfoSet);
-            ExecuteBusinessRulesMethods(EntityState.Deleted, ActionFlags.Delete, methodInfoSet);
+            ExecuteBusinessRulesMethods(EntityState.Added, ActionFlags.Create);
+            ExecuteBusinessRulesMethods(EntityState.Modified, ActionFlags.Update);
+            ExecuteBusinessRulesMethods(EntityState.Deleted, ActionFlags.Delete);
         }
 
         /// <summary>
@@ -100,22 +105,21 @@
         /// </summary>
         /// <param name="state">The state.</param>
         /// <param name="action">The action.</param>
-        /// <param name="methodInfoSet">The method info set.</param>
-        private void ExecuteBusinessRulesMethods(EntityState state, ActionFlags action, MethodInfo[] methodInfoSet)
+        private void ExecuteBusinessRulesMethods(EntityState state, ActionFlags action)
         {
             var selfTrackingEntries = Context.ChangeTracker.Entries()
-                .Where(x => x.State == state);
+                .Where(x => x.State == state)
+                .Select(x => x.Entity)
+                .Where(x => x != null);
 
-            foreach (var entry in selfTrackingEntries)
+            foreach (var entity in selfTrackingEntries)
             {
-                var entity = entry.Entity;
-                if (entity == null) continue;
                 var entityType = entity.GetType();
 
                 if (entityType.BaseType != null && entityType.Namespace == DynamicProxiesNamespace)
                     entityType = entityType.BaseType;
 
-                var methods = methodInfoSet.Where(m => m.GetCustomAttributes(typeof (BusinessRuleAttribute), true)
+                var methods = _methodInfoSet.Where(m => m.GetCustomAttributes(typeof(BusinessRuleAttribute), true)
                     .Select(a => a as BusinessRuleAttribute)
                     .Where(a => a != null)
                     .Any(
@@ -126,7 +130,7 @@
 
                 foreach (var methodInfo in methods)
                 {
-                    methodInfo.Invoke(this, new[] {entity});
+                    methodInfo.Invoke(this, new[] { entity });
                 }
             }
         }
