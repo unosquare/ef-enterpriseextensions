@@ -321,7 +321,7 @@
   
   
   <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork*"></a>
-  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_System_Threading_CancellationToken_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,System.Threading.CancellationToken)">DoWork(TParam, CancellationToken)</h4>
+  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_CancellationToken_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,CancellationToken)">DoWork(TParam, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>The job work task</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -346,7 +346,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -363,7 +363,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -371,13 +371,13 @@
   
   
   <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync*"></a>
-  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_System_Threading_CancellationToken_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)">RunAsync(TParam, CancellationToken)</h4>
+  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_CancellationToken_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,CancellationToken)">RunAsync(TParam, CancellationToken)</h4>
   <div class="markdown level1 summary"><p>Executes the job, you shouldn&apos;t call this method directly</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task RunAsync(TParam argument, CancellationToken ct = default(CancellationToken))</code></pre>
+    <pre><code class="lang-csharp hljs">public Task RunAsync(TParam argument, CancellationToken ct = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -396,7 +396,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
         <td><p>The cancellation token.</p>
 </td>
@@ -413,7 +413,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><span class="xref">Task</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -421,13 +421,13 @@
   
   
   <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork*"></a>
-  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken__1_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,`1)">RunBackgroundWork(CancellationToken, TParam)</h4>
+  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_CancellationToken__1_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,`1)">RunBackgroundWork(CancellationToken, TParam)</h4>
   <div class="markdown level1 summary"><p>Runs the job as a BackgroundWorker with default idle time of 1 minute</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RunBackgroundWork(CancellationToken ct = default(CancellationToken), TParam argument = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RunBackgroundWork(CancellationToken ct = null, TParam argument = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -440,7 +440,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
         <td></td>
       </tr>
@@ -454,7 +454,7 @@
   
   
   <a id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork*"></a>
-  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken_TimeSpan__1_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,TimeSpan,`1)">RunBackgroundWork(CancellationToken, TimeSpan, TParam)</h4>
+  <h4 id="Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_CancellationToken_TimeSpan__1_" data-uid="Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,TimeSpan,`1)">RunBackgroundWork(CancellationToken, TimeSpan, TParam)</h4>
   <div class="markdown level1 summary"><p>Runs the job as a BackgroundWorker</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -473,7 +473,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="xref">CancellationToken</span></td>
         <td><span class="parametername">ct</span></td>
         <td></td>
       </tr>

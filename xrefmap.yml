@@ -88,6 +88,22 @@ references:
   isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.ContainsController
   nameWithType: BusinessDbContext.ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance*
+  name: GetInstance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_GetInstance_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance
+  isSpec: "True"
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance
+  nameWithType: BusinessDbContext.GetInstance
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance``1
+  name: GetInstance<T>()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_GetInstance__1
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance``1
+  name.vb: GetInstance(Of T)()
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance<T>()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.GetInstance(Of T)()
+  nameWithType: BusinessDbContext.GetInstance<T>()
+  nameWithType.vb: BusinessDbContext.GetInstance(Of T)()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
   name: RemoveController(IBusinessRulesController)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
@@ -433,6 +449,22 @@ references:
   isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.ContainsController
   nameWithType: IBusinessDbContext.ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance*
+  name: GetInstance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_GetInstance_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance
+  isSpec: "True"
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance
+  nameWithType: IBusinessDbContext.GetInstance
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance``1
+  name: GetInstance<T>()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_GetInstance__1
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance``1
+  name.vb: GetInstance(Of T)()
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance<T>()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.GetInstance(Of T)()
+  nameWithType: IBusinessDbContext.GetInstance<T>()
+  nameWithType.vb: IBusinessDbContext.GetInstance(Of T)()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
   name: RemoveController(IBusinessRulesController)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessDbContext_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
@@ -572,6 +604,24 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).ContainsController
   nameWithType: IdentityBusinessDbContext<TUser>.ContainsController
   nameWithType.vb: IdentityBusinessDbContext(Of TUser).ContainsController
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.GetInstance*
+  name: GetInstance
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_GetInstance_
+  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.GetInstance
+  isSpec: "True"
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.GetInstance
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).GetInstance
+  nameWithType: IdentityBusinessDbContext<TUser>.GetInstance
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).GetInstance
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.GetInstance``1
+  name: GetInstance<T>()
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_GetInstance__1
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.GetInstance``1
+  name.vb: GetInstance(Of T)()
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext<TUser>.GetInstance<T>()
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext(Of TUser).GetInstance(Of T)()
+  nameWithType: IdentityBusinessDbContext<TUser>.GetInstance<T>()
+  nameWithType.vb: IdentityBusinessDbContext(Of TUser).GetInstance(Of T)()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext`1.RemoveController(Unosquare.Labs.EntityFramework.EnterpriseExtensions.IBusinessRulesController)
   name: RemoveController(IBusinessRulesController)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.IdentityBusinessDbContext-1.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_IdentityBusinessDbContext_1_RemoveController_Unosquare_Labs_EntityFramework_EnterpriseExtensions_IBusinessRulesController_
@@ -716,12 +766,12 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).Context
   nameWithType: JobBase<TDbContext, TParam>.Context
   nameWithType.vb: JobBase(Of TDbContext, TParam).Context
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,System.Threading.CancellationToken)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,CancellationToken)
   name: DoWork(TParam, CancellationToken)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_System_Threading_CancellationToken_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,System.Threading.CancellationToken)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork(TParam, System.Threading.CancellationToken)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork(TParam, System.Threading.CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_DoWork__1_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork(`1,CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.DoWork(TParam, CancellationToken)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).DoWork(TParam, CancellationToken)
   nameWithType: JobBase<TDbContext, TParam>.DoWork(TParam, CancellationToken)
   nameWithType.vb: JobBase(Of TDbContext, TParam).DoWork(TParam, CancellationToken)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.DoWork*
@@ -767,12 +817,12 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).IsRunning
   nameWithType: JobBase<TDbContext, TParam>.IsRunning
   nameWithType.vb: JobBase(Of TDbContext, TParam).IsRunning
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,CancellationToken)
   name: RunAsync(TParam, CancellationToken)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_System_Threading_CancellationToken_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,System.Threading.CancellationToken)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync(TParam, System.Threading.CancellationToken)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync(TParam, System.Threading.CancellationToken)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunAsync__1_CancellationToken_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync(`1,CancellationToken)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunAsync(TParam, CancellationToken)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync(TParam, CancellationToken)
   nameWithType: JobBase<TDbContext, TParam>.RunAsync(TParam, CancellationToken)
   nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync(TParam, CancellationToken)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunAsync*
@@ -784,20 +834,20 @@ references:
   fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunAsync
   nameWithType: JobBase<TDbContext, TParam>.RunAsync
   nameWithType.vb: JobBase(Of TDbContext, TParam).RunAsync
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,`1)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,`1)
   name: RunBackgroundWork(CancellationToken, TParam)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken__1_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,`1)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(System.Threading.CancellationToken, TParam)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(System.Threading.CancellationToken, TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_CancellationToken__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TParam)
   nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TParam)
   nameWithType.vb: JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TParam)
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,TimeSpan,`1)
+- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,TimeSpan,`1)
   name: RunBackgroundWork(CancellationToken, TimeSpan, TParam)
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_System_Threading_CancellationToken_TimeSpan__1_
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(System.Threading.CancellationToken,TimeSpan,`1)
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(System.Threading.CancellationToken, TimeSpan, TParam)
-  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(System.Threading.CancellationToken, TimeSpan, TParam)
+  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase-2.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_JobBase_2_RunBackgroundWork_CancellationToken_TimeSpan__1_
+  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork(CancellationToken,TimeSpan,`1)
+  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TimeSpan, TParam)
+  fullName.vb: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TimeSpan, TParam)
   nameWithType: JobBase<TDbContext, TParam>.RunBackgroundWork(CancellationToken, TimeSpan, TParam)
   nameWithType.vb: JobBase(Of TDbContext, TParam).RunBackgroundWork(CancellationToken, TimeSpan, TParam)
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.JobBase`2.RunBackgroundWork*
