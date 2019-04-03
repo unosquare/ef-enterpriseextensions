@@ -90,7 +90,7 @@
       <HintPath>..\packages\Unosquare.Swan.1.1.2\lib\netstandard2.0\Unosquare.Swan.dll</HintPath>
     </Reference>
     <Reference Include="Unosquare.Swan.Lite, Version=1.1.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unosquare.Swan.Lite.1.1.1\lib\netstandard2.0\Unosquare.Swan.Lite.dll</HintPath>
+      <HintPath>..\packages\Unosquare.Swan.Lite.1.1.1\lib\net462\Unosquare.Swan.Lite.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
