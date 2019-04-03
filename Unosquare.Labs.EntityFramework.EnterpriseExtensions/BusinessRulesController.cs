@@ -40,6 +40,13 @@
         /// <param name="controller"></param>
         /// <returns></returns>
         bool ContainsController(IBusinessRulesController controller);
+
+        /// <summary>
+        /// Gets the instance of the rule controller.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        IBusinessRulesController GetInstance<T>();
     }
 
     /// <summary>

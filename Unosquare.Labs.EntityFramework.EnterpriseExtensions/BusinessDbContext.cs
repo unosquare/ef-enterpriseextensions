@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
-using System.Data.Common;
-using System.Data.Entity;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
+﻿namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
+    using System.Collections.Generic;
+    using System.Data.Common;
+    using System.Data.Entity;
+    using System.Threading;
+    using System.Linq;
+    using System.Threading.Tasks;
+
     /// <inheritdoc cref="DbContext" />
     /// <summary>
     /// Creates a new DbContext with support to run BusinessControllers
@@ -31,30 +32,18 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         {
         }
 
-        /// <summary>
-        /// Adds a new BusinessController to the DbContext
-        /// </summary>
-        /// <param name="controller"></param>
-        public void AddController(IBusinessRulesController controller)
-        {
-            _businessControllers.Add(controller);
-        }
+        /// <inheritdoc />
+        public void AddController(IBusinessRulesController controller) => _businessControllers.Add(controller);
 
-        /// <summary>
-        /// Removes a new BusinessController to the DbContext
-        /// </summary>
-        /// <param name="controller"></param>
-        public void RemoveController(IBusinessRulesController controller)
-        {
-            _businessControllers.Remove(controller);
-        }
+        /// <inheritdoc />
+        public void RemoveController(IBusinessRulesController controller) => _businessControllers.Remove(controller);
 
-        /// <summary>
-        /// Checks if a BusinessController exists
-        /// </summary>
-        /// <param name="controller"></param>
-        /// <returns></returns>
+        /// <inheritdoc />
         public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
+
+        /// <inheritdoc />
+        public IBusinessRulesController GetInstance<T>() =>
+            _businessControllers.FirstOrDefault(x => typeof(T) == x.GetType());
 
         private void RunBusinessRules()
         {
@@ -64,30 +53,21 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
             }
         }
 
-        /// <summary>
-        /// Save Changes and run all the business controllers
-        /// </summary>
-        /// <returns></returns>
+        /// <inheritdoc />
         public override int SaveChanges()
         {
             RunBusinessRules();
             return base.SaveChanges();
         }
 
-        /// <summary>
-        /// Save Changes Async and run all the business controllers
-        /// </summary>
-        /// <returns></returns>
+        /// <inheritdoc />
         public override Task<int> SaveChangesAsync()
         {
             RunBusinessRules();
             return base.SaveChangesAsync();
         }
 
-        /// <summary>
-        /// Save Changes Async and run all the business controllers
-        /// </summary>
-        /// <returns></returns>
+        /// <inheritdoc />
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
             RunBusinessRules();

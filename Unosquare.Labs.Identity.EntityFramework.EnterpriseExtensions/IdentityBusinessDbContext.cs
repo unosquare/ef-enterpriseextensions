@@ -1,6 +1,7 @@
 namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 {
     using System.Collections.Generic;
+    using System.Linq;
     using System.Data.Common;
     using System.Threading;
     using System.Threading.Tasks;
@@ -41,16 +42,17 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         }
 
         /// <inheritdoc />
-        public void AddController(IBusinessRulesController controller)
-        {
-            _businessControllers.Add(controller);
-        }
+        public void AddController(IBusinessRulesController controller) => _businessControllers.Add(controller);
 
         /// <inheritdoc />
         public void RemoveController(IBusinessRulesController controller) => _businessControllers.Remove(controller);
 
         /// <inheritdoc />
         public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
+
+        /// <inheritdoc />
+        public IBusinessRulesController GetInstance<T>() =>
+            _businessControllers.FirstOrDefault(x => typeof(T) == x.GetType());
 
         private void RunBusinessRules()
         {

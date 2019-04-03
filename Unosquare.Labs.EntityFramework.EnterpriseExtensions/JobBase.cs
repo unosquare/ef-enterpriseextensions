@@ -71,11 +71,11 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
                 {
                     while (BackgroundCondition() == false)
                     {
-                        await Task.Delay(idleTime, ct);
+                        await Task.Delay(idleTime, ct).ConfigureAwait(false);
                     }
 
-                    await RunAsync(argument, ct);
-                    await Task.Delay(idleTime, ct);
+                    await RunAsync(argument, ct).ConfigureAwait(false);
+                    await Task.Delay(idleTime, ct).ConfigureAwait(false);
                 }
             }
             catch (TaskCanceledException)
@@ -89,10 +89,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
         /// </summary>
         /// <param name="ct"></param>
         /// <param name="argument"></param>
-        public void RunBackgroundWork(CancellationToken ct = default(CancellationToken), TParam argument = null)
-        {
-            RunBackgroundWork(ct, TimeSpan.FromMinutes(1), argument);
-        }
+        public void RunBackgroundWork(CancellationToken ct = default, TParam argument = null) => RunBackgroundWork(ct, TimeSpan.FromMinutes(1), argument);
 
         /// <summary>
         /// The Job execution Start Date
@@ -120,7 +117,7 @@ namespace Unosquare.Labs.EntityFramework.EnterpriseExtensions
 
             try
             {
-                await DoWork(argument, ct);
+                await DoWork(argument, ct).ConfigureAwait(false);
             }
             finally
             {

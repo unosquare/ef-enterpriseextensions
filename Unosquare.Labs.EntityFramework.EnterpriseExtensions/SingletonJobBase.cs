@@ -3,9 +3,9 @@
     using System;
 
     /// <summary>
-    /// 
+    /// Represents a job base using the singleton pattern.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type of the job class.</typeparam>
     /// <typeparam name="TDbContext"></typeparam>
     /// <typeparam name="TParam"></typeparam>
     public abstract class SingletonJobBase<T, TDbContext, TParam> : JobBase<TDbContext, TParam>, IDisposable
@@ -61,9 +61,9 @@
     }
 
     /// <summary>
-    /// 
+    /// Represents a job base using the singleton pattern.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type of the job class.</typeparam>
     /// <typeparam name="TDbContext"></typeparam>
     public abstract class SingletonJobBase<T, TDbContext> : SingletonJobBase<T, TDbContext, object>
         where TDbContext : IBusinessDbContext where T : class
