@@ -1,11 +1,12 @@
-# ef-enterpriseextensions
 [![Build status](https://ci.appveyor.com/api/projects/status/6e5vk7s69ur34nd0?svg=true)](https://ci.appveyor.com/project/geoperez/ef-enterpriseextensions)
 
-Unosquare Labs EntityFramework.EnterpriseExtensions Library contains a set of useful helpers and classes to common tasks related to process and data manipulation in 
-enterprise applications.
+# ef-enterpriseextensions
 
-NuGet Installation:
--------------------
+*:star: Please star this project if you find it useful!*
+
+Unosquare Labs EntityFramework.EnterpriseExtensions Library contains a set of useful helpers and classes to common tasks related to process and data manipulation in enterprise applications.
+
+## NuGet Installation:
 
 [![NuGet version](https://badge.fury.io/nu/Unosquare.EntityFramework.EnterpriseExtensions.svg)](https://badge.fury.io/nu/Unosquare.EntityFramework.EnterpriseExtensions)
 ```
@@ -19,8 +20,7 @@ If you are using Identity Entity Framework (`IdentityDbContext`), use the follow
 PM> Install-Package Unosquare.Identity.EntityFramework.EnterpriseExtensions
 ```
 
-Usage
----
+## Usage
 
 First you need to change your `DbContext` or `IdentityDbContext` to `BusinessDbContext` or `IdentityBusinessDbContext` respectively and you can 
 attach Business Controllers to your DbContext in the constructor. They will execute before any time you call `SaveChanges` method. 
@@ -30,8 +30,7 @@ identify what CRUD action and which Entity types will be processed.
 EF Enterprise Extensions includes a `JobBase` abstract class (with a singleton extension named `SingletonJobBase`), so you can build business jobs easily. 
 Check the Sample app.
 
-Business Rules - Audit Trail
-----------------------------
+### Business Rules - Audit Trail
 
 Audit Trails is a task to save the changes to any operation performed in a record. In other words, capture what change between any data saving. 
 This operation is important in many systems and you can accomplish with these extensions easily. The `AuditTrailController` can be attached to your `BusinessDbContext`and setup which Entities will be recorded in the three CRUD actions supported, create, update and delete.
@@ -80,8 +79,7 @@ public class SampleDb : BusinessDbContext
 
 By default, all the entities will be audited, you can access the Audit Trail controller and set up the action-types relation with the method `AddTypes`. All the data is stored as a JSON string. You can use this Business Controller or you can create your own and probably change to serialize the data change in XML or every property in one database record.
 
-Jobs
-----
+### Jobs
 
 The *Jobs* is a wrapper for your tasks. They can run in a single instance (singletons with `SingletonJobBase`) or with multiple executions using `JobBase`. You can execute them in your ASP.NET applications (WebApi too) using the `HostingEnvironment.QueueBackgroundWorkItem` method in .NET 4.6 and set up your execution condition with a DateTime or a flag.
 
