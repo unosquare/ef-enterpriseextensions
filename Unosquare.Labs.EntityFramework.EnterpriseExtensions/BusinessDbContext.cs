@@ -39,39 +39,40 @@
         public void RemoveController(IBusinessRulesController controller) => _businessControllers.Remove(controller);
 
         /// <inheritdoc />
-        public bool ContainsController(IBusinessRulesController controller) => _businessControllers.Contains(controller);
+        public bool ContainsController(IBusinessRulesController controller) =>
+            _businessControllers.Contains(controller);
 
         /// <inheritdoc />
         public IBusinessRulesController GetInstance<T>() =>
             _businessControllers.FirstOrDefault(x => typeof(T) == x.GetType());
 
-        private void RunBusinessRules()
+        private async Task RunBusinessRules()
         {
             foreach (var controller in _businessControllers)
             {
-                controller.RunBusinessRules();
+                await controller.RunBusinessRules();
             }
         }
 
         /// <inheritdoc />
         public override int SaveChanges()
         {
-            RunBusinessRules();
+            RunBusinessRules().GetAwaiter().GetResult();
             return base.SaveChanges();
         }
 
         /// <inheritdoc />
-        public override Task<int> SaveChangesAsync()
+        public override async Task<int> SaveChangesAsync()
         {
-            RunBusinessRules();
-            return base.SaveChangesAsync();
+            await RunBusinessRules();
+            return await base.SaveChangesAsync();
         }
 
         /// <inheritdoc />
-        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken)
+        public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
-            RunBusinessRules();
-            return base.SaveChangesAsync(cancellationToken);
+            await RunBusinessRules();
+            return await base.SaveChangesAsync(cancellationToken);
         }
     }
 }

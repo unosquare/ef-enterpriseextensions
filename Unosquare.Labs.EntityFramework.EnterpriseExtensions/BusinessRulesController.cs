@@ -14,7 +14,7 @@
         /// <summary>
         /// Handles the SavingChanges event of the context object.
         /// </summary>
-        void RunBusinessRules();
+        Task RunBusinessRules();
     }
 
     /// <summary>
@@ -60,7 +60,6 @@
         private const string DynamicProxiesNamespace = "System.Data.Entity.DynamicProxies";
         private readonly MethodInfo[] _methodInfoSet;
 
-
         /// <summary>
         /// Gets or sets the context.
         /// </summary>
@@ -86,12 +85,11 @@
         }
 
         /// <inheritdoc />
-        public void RunBusinessRules()
-        {
-            ExecuteBusinessRulesMethods(EntityState.Added, ActionFlags.Create);
-            ExecuteBusinessRulesMethods(EntityState.Modified, ActionFlags.Update);
-            ExecuteBusinessRulesMethods(EntityState.Deleted, ActionFlags.Delete);
-        }
+        public Task RunBusinessRules()
+            => Task.WhenAll(
+                ExecuteBusinessRulesMethods(EntityState.Added, ActionFlags.Create),
+                ExecuteBusinessRulesMethods(EntityState.Modified, ActionFlags.Update),
+                ExecuteBusinessRulesMethods(EntityState.Deleted, ActionFlags.Delete));
 
         /// <summary>
         /// Returns the entity type
@@ -112,7 +110,7 @@
         /// </summary>
         /// <param name="state">The state.</param>
         /// <param name="action">The action.</param>
-        private void ExecuteBusinessRulesMethods(EntityState state, ActionFlags action)
+        private async Task ExecuteBusinessRulesMethods(EntityState state, ActionFlags action)
         {
             var selfTrackingEntries = Context.ChangeTracker.Entries()
                 .Where(x => x.State == state)
@@ -137,7 +135,14 @@
 
                 foreach (var methodInfo in methods)
                 {
-                    methodInfo.Invoke(this, new[] { entity });
+                    if (methodInfo.ReturnType == typeof(Task))
+                    {
+                        await (Task) methodInfo.Invoke(this, new[] {entity});
+                    }
+                    else
+                    {
+                        methodInfo.Invoke(this, new[] {entity});
+                    }
                 }
             }
         }
