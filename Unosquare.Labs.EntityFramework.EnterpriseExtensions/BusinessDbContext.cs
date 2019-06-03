@@ -53,21 +53,7 @@
                 await controller.RunBusinessRules();
             }
         }
-
-        /// <inheritdoc />
-        public override int SaveChanges()
-        {
-            RunBusinessRules().GetAwaiter().GetResult();
-            return base.SaveChanges();
-        }
-
-        /// <inheritdoc />
-        public override async Task<int> SaveChangesAsync()
-        {
-            await RunBusinessRules();
-            return await base.SaveChangesAsync();
-        }
-
+        
         /// <inheritdoc />
         public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
