@@ -117,25 +117,6 @@ references:
   isSpec: "True"
   fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.RemoveController
   nameWithType: BusinessDbContext.RemoveController
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
-  name: SaveChanges()
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges()
-  nameWithType: BusinessDbContext.SaveChanges()
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges*
-  name: SaveChanges
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChanges_
-  commentId: Overload:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
-  isSpec: "True"
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChanges
-  nameWithType: BusinessDbContext.SaveChanges
-- uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
-  name: SaveChangesAsync()
-  href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync
-  commentId: M:Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync
-  fullName: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync()
-  nameWithType: BusinessDbContext.SaveChangesAsync()
 - uid: Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.SaveChangesAsync(System.Threading.CancellationToken)
   name: SaveChangesAsync(CancellationToken)
   href: api/Unosquare.Labs.EntityFramework.EnterpriseExtensions.BusinessDbContext.html#Unosquare_Labs_EntityFramework_EnterpriseExtensions_BusinessDbContext_SaveChangesAsync_System_Threading_CancellationToken_
